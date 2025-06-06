@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team - High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#47467f',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #47467f;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.team-nav-button.active {
+background-color: #c9a84a;
+}
+.team-nav-button:hover {
+background-color: #c9a84a;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #47467f;
+}
+.social-icon:hover {
+background-color: #c9a84a;
+color: white;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/4b5a729e3b2a9087b26f92911a57fd25.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="#" class="nav-link active-nav text-primary font-medium">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">News</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="#" class="text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2">News</a>
+</div>
+</div>
+</header>
+<!-- Page Title Section -->
+<section class="pt-32 pb-10 bg-white">
+<div class="container mx-auto px-4">
+<h1 class="text-4xl md:text-5xl font-bold text-primary text-center">Our Team</h1>
+<p class="text-xl text-gray-600 text-center mt-4 max-w-3xl mx-auto">Meet the dedicated individuals who support the Office of the High Sheriff of Buckinghamshire</p>
+</div>
+</section>
+<!-- Team Navigation -->
+<section class="sticky top-[72px] bg-white shadow-md z-40">
+<div class="container mx-auto px-4 py-3">
+<div class="flex overflow-x-auto space-x-4 pb-2 md:justify-center md:pb-0">
+<button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="high-sheriff">High Sheriff</button>
+<button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="under-sheriff">Under Sheriff</button>
+<button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="multi-faith">High Sheriff's Chaplain</button>
+<button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="nomination-panel">Nomination Panel</button>
+</div>
+</div>
+</section>
+<!-- High Sheriff Section -->
+<section id="high-sheriff" class="py-20 bg-white team-section">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-12">Current High Sheriff</h2>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/90385f6abe09f20a7e7bdd19746d4eb2.jpeg" alt="Pippa Kirkbridge" class="w-full h-auto rounded-lg shadow-xl object-cover">
+<div class="mt-6 bg-gray-50 p-6 rounded-lg">
+<h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-4">
+<i class="ri-mail-line ri-lg"></i>
+</div>
+<p class="text-gray-600">buckinghamshire@highsheriffs.com</p>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-4">
+<i class="ri-phone-line ri-lg"></i>
+</div>
+<p class="text-gray-600">+44 (0) 7798 882712</p>
+</div>
+</div>
+</div>
+<div class="w-full">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Pippa Kirkbride</h3>
+<p class="text-lg text-gray-700 mb-6">Pippa Kirkbride is the High Sheriff of Buckinghamshire for the year April 2025 – March 2026.</p>
+<p class="text-lg text-gray-700 mb-6">Pippa developed a joy of working with people and a strong commercial focus throughout her successful career in food manufacturing and retail. She has worked with Marks & Spencer, Nestlé, and Tesco, and has been a Non-Executive Director of Buckinghamshire Healthcare NHS Trust for the past 6 years. She is also a trustee of the Pace Centre, a charity for children with motor disorders.</p>
+<p class="text-lg text-gray-700 mb-6">Pippa has lived in Buckinghamshire for 25 years with her husband Richard and their three children. She is an active member of her local church and community in Haddenham.</p>
+<p class="text-lg text-gray-700 mb-6">During her year as High Sheriff, Pippa's theme is "Let Us Work Together to Lift Up Our Young People and Let Us Celebrate the Power Of Volunteering". She is focusing on supporting young people and celebrating the power of volunteering across Buckinghamshire.</p>
+<p class="text-lg text-gray-700 mb-6">Pippa is working closely with the Lord-Lieutenant and his Deputy Lieutenants, the police, fire and rescue services, the NHS, local government, the judiciary, and the voluntary sector. She is particularly interested in supporting organizations that help young people develop life skills and confidence.</p>
+<p class="text-lg text-gray-700">Pippa is available to attend events across Buckinghamshire. If you would like to invite her to an event, please use the contact information provided.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Under Sheriff Section -->
+<section id="under-sheriff" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-12">Under Sheriff & Deputy</h2>
+<div class="mb-16">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Under Sheriff Role</h3>
+<p class="text-lg text-gray-700 mb-6">Under the Sheriffs Act 1887, the High Sheriff has a legal duty to appoint an Under Sheriff. This is an annual appointment and the High Sheriff must by law, within one month of taking office, give to the Queen's Remembrancer details of the person they have appointed as their Under Sheriff.</p>
+<p class="text-lg text-gray-700 mb-6">This is usually done at the time that the new High Sheriff makes the Declaration of Office. Duchy Counties have a different system of appointment of an Under Sheriff and the incumbent will advise.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/45f33b3b461d17470999060d205e9b78.jpeg" alt="Mrs Serene Taylor" class="w-full h-auto rounded-lg shadow-xl object-cover">
+<div class="mt-6 bg-gray-50 p-6 rounded-lg">
+<h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-4">
+<i class="ri-mail-line ri-lg"></i>
+</div>
+<p class="text-gray-600">undersheriff@highsheriffofbuckinghamshire.com</p>
+</div>
+</div>
+</div>
+<div class="w-full">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Mrs Serene Taylor</h3>
+<p class="text-lg text-gray-700 mb-6">In her role, Serene supports the High Sheriff in ceremonial and legal responsibilities, acting as a key point of continuity within the Shrievalty. She brings over 30 years of distinguished service within the criminal justice system, marked by extensive legal expertise, senior leadership experience, and a longstanding commitment to public service in the County.</p>
+<p class="text-lg text-gray-700 mb-6">A second-generation Singaporean, Serene's legal journey began in Singapore, where she held early legal support roles at several respected law firms, including the esteemed Lee & Lee, founded by Singapore's first Prime Minister, Lee Kuan Yew. Determined to advance her career, she pursued her A Levels through evening classes and enrolled in the University of London External Law Degree programme. She later moved to the UK to complete her studies, was called to the Bar by the Honourable Society of the Inner Temple, and embarked on a public service career with the Magistrates' Courts Service, which later became part of Her Majesty's Courts and Tribunals Service.</p>
+<p class="text-lg text-gray-700 mb-6">Through most of her career, Serene held senior legal positions, most notably as Legal Team Manager for Buckinghamshire Crime. In this capacity, she collaborated closely with the judiciary and criminal justice agencies on inter-agency initiatives addressing knife crime, domestic violence, and youth offending. In 1997, she completed a Master's degree in Criminology at the University of Leicester's Centre for the Study of Public Order reinforcing her belief in rehabilitation as a cornerstone of effective justice.
+Since retiring in 2021, Serene has continued to serve the County as Under Sheriff, offering trusted guidance and continuity to successive High Sheriffs. She and her husband have lived in Buckinghamshire, raising two children, who were educated locally. An active member of her local church community, Serene also enjoys gardening, reflecting her enduring interest in nurturing both people and place. Serene's work is guided by a strong sense of public duty, fairness, and compassion – values that continue to shape her contribution to the civic life of Buckinghamshire.</p>
+</div>
+</div>
+</div>
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-12">Deputy Under Sheriff</h2>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/dd4cfe7d47b93c6a0df0ea4c8600c824.png" alt="Mr John Cawley" class="w-full h-auto rounded-lg shadow-xl object-cover">
+</div>
+<div class="w-full">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Mr John Cawley</h3>
+<p class="text-lg text-gray-700 mb-6">John is an in-house solicitor at the University of the Arts London, where he plays a key role in managing employment tribunal proceedings and advising on a broad range of employment law matters. His work supports the university's commitment to legal compliance and fair workplace practices through close collaboration with HR and senior leadership. He also contributes to policy development and risk management strategies, ensuring that the institution remains aligned with best practice and employment legislation.</p>
+<p class="text-lg text-gray-700 mb-6">Prior to joining UAL, he trained at Slater and Gordon Lawyers, gaining experience across a range of contentious and non-contentious matters, including high-profile employment tribunal litigation and complex private client work managing high-value trusts and estates.</p>
+<p class="text-lg text-gray-700 mb-6">In addition to his legal practice, John has a strong interest in public service and community engagement. He has volunteered with employment rights organisations and participated in pro bono advice schemes. He is also an active fundraiser, having completed the 2024 TCS London Marathon for Cancer Research UK and other challenges in support of national charities.
+John's personal interests include running, debating, and ice hockey, and he is passionate about using his legal expertise to serve both the justice system and the wider community.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Multi-Faith Chaplaincy Section -->
+<section id="multi-faith" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-12">High Sheriff's Chaplain</h2>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/192f1f503a0f9975c61314296f92d762.jpeg" alt="Revd Jonny Rapson" class="w-full h-auto rounded-lg shadow-xl object-cover">
+</div>
+<div class="w-full">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Revd Jonny Rapson</h3>
+<p class="text-lg text-gray-700 mb-6">The High Sheriff's chaplain supports and upholds the High Sheriff in fulfilling their role. They are drawn from faith and belief organisations of all kinds and can include individuals and communities who have no religious or denominational faith.</p>
+<p class="text-lg text-gray-700 mb-6">Pippa's Chaplain for 2025 is The Revd Jonny Rapson.</p>
+<p class="text-lg text-gray-700 mb-6">Jonny is the rector for St. Mary's, Old Amersham and All Saints', Coleshill where he has served for three years. Since his time in the parish, he has enabled the development of a core vision for the two churches, focusing on community, welcome and worship. With support from many in the parish, the two churches have an increasing number of community outreach events to provide safe spaces in our communities.</p>
+<p class="text-lg text-gray-700">Jonny is married to his wife Jenna and they have a one year old daughter, Naomi. They are especially looking forward to the arrival of baby number two in August.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Nomination Panel Section -->
+<section id="nomination-panel" class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-12">Nomination Panel</h2>
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5e96108e3bb4d64893db3abd032a4b67.png" alt="Nomination Panel" class="w-full h-auto rounded-lg shadow-xl object-cover">
+</div>
+<div class="md:w-2/3">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">The Nomination Panel</h3>
+<p class="text-lg text-gray-700 mb-6">The Buckinghamshire Nomination Panel for the appointment of future High Sheriffs is currently comprised of sixteen members, who represent an inclusive cross-section of those connected with the current Shrievalty as well representatives of the broader community. The Under Sheriff is the Secretary of the Nomination Panel. Further details of the members of the Nomination Panel can be found below.</p>
+<h3 class="text-2xl font-bold text-gray-800 mb-6">How does it work?</h3>
+<p class="text-lg text-gray-700 mb-6">The Buckinghamshire Nomination Panel normally meets twice each year. Each member of the Nomination Panel is encouraged to put forward candidates that they feel would meet the essential criteria and characteristics for the role of High Sheriff. At the October meeting, candidates are reviewed and considered, and the current High Sheriff is then tasked with approaching the consensus candidate. Candidates are nominated four years in advance to provide sufficient time for preparation, as well as a pool of approved candidates should unexpected events occur.</p>
+<p class="text-lg text-gray-700 mb-12">The names of the future High Sheriffs in Nomination are kept confidential until they have been read out at the Nomination Ceremony in the Royal Courts of Justice in November each year.</p>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Panel Members</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Pippa Kirkbride</h4>
+<p class="text-gray-600">High Sheriff</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Francesca Skelton</h4>
+<p class="text-gray-600">Lord-Lieutenant of Buckinghamshire Representative</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Kurshida Mirza BEM</h4>
+<p class="text-gray-600">Immediate Past High Sheriff</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Serene Taylor</h4>
+<p class="text-gray-600">Under Sheriff (Secretary)</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Nikki Ross</h4>
+<p class="text-gray-600">High Sheriff in Nomination</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">The Revd Christopher Bull</h4>
+<p class="text-gray-600">Independent Chair from a faith group</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Michael Garvey MBE</h4>
+<p class="text-gray-600">Business Leader</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Rachael Shimmin</h4>
+<p class="text-gray-600">Chief Executive of Buckinghamshire Council</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Michael Bracey</h4>
+<p class="text-gray-600">Chief Executive of Milton Keynes Council</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Assistant Chief Constable Dennis Murray</h4>
+<p class="text-gray-600">Thames Valley Police</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Henry Allmand</h4>
+<p class="text-gray-600">Heart of Bucks Community Foundation</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Ian Revell</h4>
+<p class="text-gray-600">Chief Executive of the Milton Keynes Community Foundation</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Jake Yeo</h4>
+<p class="text-gray-600">Education Representative</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">HHJ Patrick Perusko</h4>
+<p class="text-gray-600">Designated Family Judge for Milton Keynes and Buckinghamshire</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Caroline Shorten-Conn</h4>
+<p class="text-gray-600">Justice of the Peace (Magistracy)</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Arif Master</h4>
+<p class="text-gray-600">Faith Representative</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Past High Sheriffs Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-4">Past High Sheriffs</h2>
+<p class="text-lg text-gray-700 mb-12">Discover the distinguished individuals who have served as High Sheriff of Buckinghamshire</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Kurshida Mirza BEM</h4>
+<p class="text-gray-600 mb-2">2024 - 2025</p>
+<p class="text-gray-700">Focused on promoting diversity, inclusion and community cohesion across Buckinghamshire.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Ann Limb DBE DL</h4>
+<p class="text-gray-600 mb-2">2023 - 2024</p>
+<p class="text-gray-700">Focused on supporting education, social mobility and environmental sustainability across the county.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-lg font-semibold text-primary mb-2">Debbie Brock DL</h4>
+<p class="text-gray-600 mb-2">2022 - 2023</p>
+<p class="text-gray-700">Championed youth engagement and community development initiatives across Buckinghamshire.</p>
+</div>
+</div>
+<div class="flex justify-center">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="bg-primary hover:bg-secondary text-white px-8 py-3 !rounded-button font-medium transition-all flex items-center gap-2 whitespace-nowrap">
+See More Past High Sheriffs
+<i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="#" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="hover:text-secondary transition-colors">News</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/f7cc9433-14db-4474-b8c6-96d77b3f4432" data-readdy="true" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="team-navigation-script">
+document.addEventListener('DOMContentLoaded', function() {
+const navButtons = document.querySelectorAll('.team-nav-button');
+// Add click event to each button
+navButtons.forEach(button => {
+button.addEventListener('click', function() {
+const targetSection = this.dataset.target;
+const section = document.getElementById(targetSection);
+if (section) {
+const headerOffset = 140;
+const elementPosition = section.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+// Update active button state
+navButtons.forEach(btn => {
+if (btn.dataset.target === targetSection) {
+btn.classList.add('active');
+btn.style.backgroundColor = '#c9a84a';
+} else {
+btn.classList.remove('active');
+btn.style.backgroundColor = '#47467f';
+}
+});
+}
+});
+});
+// Handle direct links to sections
+const hash = window.location.hash.substring(1);
+if (hash && document.getElementById(hash)) {
+const targetButton = document.querySelector(`.team-nav-button[data-target="${hash}"]`);
+if (targetButton) {
+targetButton.click();
+}
+}
+});
+</script>
+<script id="scroll-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerOffset = 140; // Height of fixed header + nav
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+// If it's a team section, activate the corresponding button
+if (targetElement.classList.contains('team-section')) {
+const sectionId = targetElement.id;
+const navButtons = document.querySelectorAll('.team-nav-button');
+navButtons.forEach(button => {
+if (button.dataset.target === sectionId) {
+button.classList.add('active');
+} else {
+button.classList.remove('active');
+}
+});
+// Show the section and hide others
+const teamSections = document.querySelectorAll('.team-section');
+teamSections.forEach(section => {
+if (section.id === sectionId) {
+section.classList.remove('hidden');
+} else {
+section.classList.add('hidden');
+}
+});
+}
+}
+});
+});
+});
+</script>
+</body>
+</html>

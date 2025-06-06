@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#47467f',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #0c3b6e;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.blog-content h2 {
+font-size: 1.875rem;
+font-weight: 700;
+color: #47467f;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+.blog-content h3 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #47467f;
+margin-top: 1.5rem;
+margin-bottom: 0.75rem;
+}
+.blog-content p {
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.blog-content ul, .blog-content ol {
+margin-bottom: 1.5rem;
+padding-left: 1.5rem;
+}
+.blog-content ul {
+list-style-type: disc;
+}
+.blog-content ol {
+list-style-type: decimal;
+}
+.blog-content li {
+margin-bottom: 0.5rem;
+}
+.blog-content blockquote {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+font-style: italic;
+margin: 1.5rem 0;
+color: #4b5563;
+}
+.blog-content img {
+border-radius: 8px;
+margin: 2rem 0;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.blog-content .image-caption {
+text-align: center;
+font-size: 0.875rem;
+color: #6b7280;
+margin-top: -1.5rem;
+margin-bottom: 2rem;
+}
+.blog-content .callout {
+background-color: #f8f9fa;
+border-left: 4px solid #47467f;
+padding: 1.5rem;
+margin: 1.5rem 0;
+border-radius: 8px;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="nav-link active-nav text-primary font-medium">News & Galleries</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="text-primary font-medium py-2">News & Galleries</a>
+</div>
+</div>
+</header>
+<!-- Blog Hero Banner -->
+<section class="w-full h-[500px] flex items-center justify-center text-white mt-16 relative">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"></div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/e6ce264c6acf81204b1869db0ffe1ab1.png" alt="High Sheriff Multi-faith Chaplaincy Team" class="absolute inset-0 w-full h-full object-cover object-top">
+<div class="container mx-auto px-4 text-center relative z-20 mt-[200px]">
+<div class="inline-block bg-secondary/90 px-4 py-2 rounded-sm mb-4">
+<span class="text-white font-medium">15 October 2024</span>
+</div>
+<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">A Justice Service with a Twist!</h1>
+</div>
+</section>
+<!-- Blog Content -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<!-- Author Info -->
+<div class="flex items-center mb-12 border-b border-gray-200 pb-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/035a224247c13297aab0c4c3123ecda4.jpeg" alt="Kurshida Mirza BEM" class="w-16 h-16 rounded-full object-cover mr-4">
+<div>
+<h3 class="font-semibold text-lg">Kurshida Mirza BEM</h3>
+<p class="text-gray-600">High Sheriff of Buckinghamshire 2024-25</p>
+</div>
+</div>
+<!-- Blog Content -->
+<div class="blog-content">
+<p class="text-xl leading-relaxed mb-8">September and October marks the start of the legal year and as a High Sheriff it is incumbent to host a service to mark the start of the year and to give thanks to the work of all those involved in carrying out justice.  The beauty of the role is that we can all individualise and personalise how we traverse our year and the kind of service we want. So, I took the opportunity of my High Sheriff Justice Service to share some of the teachings and prayers of Islam that relate to the theme of my year – Peace, Justice and Love for Humanity.</p>
+<p class="text-xl leading-relaxed mb-8">I want my year as High Sheriff to represent our shared connection as human beings and to work towards peace for the love of humanity. I believe we will not achieve true equilibrium in this life and the hereafter until we have peace, and peace can only come if we respect the rights of each other and learn to love and respect each other recognising the uniqueness of our differences and shared humanity.</p>
+<p class="text-xl leading-relaxed mb-8">Peace is undeniably one of the greatest human needs. Peace is a fundamental aspect of Islam. In fact, the word Islam means peace and submission. Allah says in the Quran:</p>
+<blockquote class="text-xl leading-relaxed mb-8 pl-6 border-l-4 border-secondary italic">"Seek the life to come by means of what God has granted you, but do not neglect your rightful share in this world. Do good to others as God has done good to you. Do not seek to spread corruption in the land, for God does not love those who do this" (Quran, 28:77)</blockquote>
+<p class="text-xl leading-relaxed mb-8"></p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/7fdb198b332afabd5bdca78658c1d525.png" alt="Pippa Kirkbride and Buckinghamshire Scouts Young People's Awards Presentation Day" class="w-full h-64 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/85bed16bf29159513399a264232b86c1.png" alt="Judicial Procession" class="w-full h-64 object-cover rounded-lg">
+</div>
+<div class="image-caption"></div>
+<h3>Justice Service</h3>
+<p>My Justice service was a departure from the traditional. It was not held in a place of worship such as a Church, Mosque or a Temple.  It was held outdoors in the Tree Cathedral. The Tree Cathedral is a unique cathedral in Milton Keynes, not made of bricks and mortar, but of trunks, branches, bark and leaves.  Designed in 1986 by Milton Keynes Development Corporation landscape architect Neil Higson, it is based on the outline of Norwich Cathedral.  It epitomises the uniqueness of Milton Keynes as a green city and my own belief that bricks and mortar can create barriers.</p>
+<h2></h2>
+<p>In Islam, a fundamental aspect of every Muslim’s worship is to give thanks to the Creator by admiring, maintaining and preserving His creation, the green canopy that we are blessed with on planet Earth.  The planet Earth is a blessing from God – a gift – of which as humans we have the responsibility as its custodians to take care of it with love and affection including those who inhabit it from humans to the animal kingdom.</p>
+<p>My justice service was also unusual in that I did not be wear my High Sheriff uniform along with His Majesty’s Judges, Magistrates and all those concerned in the administration of justice to wore their civilian clothes.  There was no procession of dignitaries.  The lack of formal robes and a formal procession was partly practical, given our glorious and unusual setting, but it also contained an important message: we all meet together this year in a spirit of human unity.</p>
+<p>In Islam when Muslims gather for prayers, and especially when they go for the pilgrimage (Hajj and Umrah), everyone is equal, wearing the same white clothes to cover their body.  Men, women and children gather together only for the sake of Allah and no one else.  At that moment we leave our status, qualifications and titles behind as servants of God.  A memory I will cherish all my life is when I circled the Kab’ah during my Hajj and realised that worldly titles are nothing.  What is important is the oneness of Allah and to do good in this world because you are given only one chance.  We arrive in this world with nothing and return to Him with nothing leaving behind our loved ones and all our worldly possessions. </p>
+<h2></h2>
+<p>"I was able to curate pieces for the readings and music to evoke the oneness of God and humanity.  I love drums, both the Daff from my Islamic roots and the Dhol and Tabla from my Asian roots and, combining these with the Buddhist drum, the musicians created a sound to represent the shared beauty to show how regardless of faith, background and culture we can find ‘one voice’ – a voice for Peace, Justice and Love for Humanity."
+Kurshida Mirza, BEM
+High Sheriff of the Buckinghamshire 2024-25</p>
+<p>Kurshida has a passion for working with communities and has developed a unique vehicle in Milton Keynes (MK) for engaging with diverse communities and in particular Muslims and faith-based communities who are seldom heard and less visible. Kurshida is the founder of Trubys Garden Tea Room, an interfaith pop-up café promoting positive dialogue between Muslims and the wider community in MK – this has become an important conduit for community engagement with diverse communities utilising methods that produce results. She also founded and created the Great Get Together Iftaar in 2017 to bring the diverse communities in MK to celebrate Ramadan with the Muslim community along with the Trubys Abrahamic Women’s Choir in 2022 which celebrates women’s strength through sound singing in Arabic, Hebrew and English providing women and girls from the Abrahamic faith to share the rich tradition of recitation within their faith.
+
+Kurshida was a Trustee and Chair of the Board of Trustees for Milton Keynes Community Foundation from 2020-2023, Chair of Citizens MK from 2016-2019, and Chair of Midlands Region of the Housing Learning and Improvement Network (Housing LIN) between 2016-2020.
+
+Born in India, Kurshida came to the UK as a seven year old, her lived-in experiences of the harsh reality of growing up with racism and lack of opportunities for girls and women has made her resilient and resourceful to find positive solutions to rise beyond expectations. She is happily married to her soul mate Jabeer Butt whom she met at University, her pillar of support and strength. Kurshida has lived in Milton Keynes since 1990 where she lives with her children Imtiaaz and his wife Anum and Zulehka her daughter. Her sisters are her best friends and a day never goes without their good advice and counsel.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="hover:text-secondary transition-colors">News & Galleries</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/f7cc9433-14db-4474-b8c6-96d77b3f4432" data-readdy="true" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="image-lightbox-script">
+document.addEventListener('DOMContentLoaded', function() {
+const blogImages = document.querySelectorAll('.blog-content img');
+blogImages.forEach(image => {
+image.style.cursor = 'pointer';
+image.addEventListener('click', function() {
+const lightbox = document.createElement('div');
+lightbox.classList.add('fixed', 'inset-0', 'bg-black/90', 'flex', 'items-center', 'justify-center', 'z-50', 'p-4');
+const lightboxImg = document.createElement('img');
+lightboxImg.src = this.src;
+lightboxImg.classList.add('max-w-full', 'max-h-full', 'object-contain');
+const closeBtn = document.createElement('button');
+closeBtn.classList.add('absolute', 'top-4', 'right-4', 'text-white', 'text-4xl');
+closeBtn.innerHTML = '&times;';
+closeBtn.addEventListener('click', function() {
+document.body.removeChild(lightbox);
+});
+lightbox.appendChild(lightboxImg);
+lightbox.appendChild(closeBtn);
+lightbox.addEventListener('click', function(e) {
+if (e.target === lightbox) {
+document.body.removeChild(lightbox);
+}
+});
+document.body.appendChild(lightbox);
+});
+});
+});
+</script>
+<script id="scroll-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerOffset = 80; // Height of fixed header
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>

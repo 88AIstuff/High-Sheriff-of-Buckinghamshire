@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Past High Sheriffs - High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#47467f',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #47467f;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #47467f;
+}
+.social-icon:hover {
+background-color: #c9a84a;
+color: white;
+}
+.sheriff-card {
+transition: all 0.3s ease;
+}
+.sheriff-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/4b5a729e3b2a9087b26f92911a57fd25.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">News & Galleries</a>
+<a href="#contact" class="nav-link text-gray-700 hover:text-primary font-medium">Contacts</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="#" class="text-primary font-medium py-2 border-b border-gray-100">Past High Sheriffs</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">News & Galleries</a>
+<a href="#contact" class="text-gray-700 hover:text-primary font-medium py-2">Contacts</a>
+</div>
+</div>
+</header>
+<!-- Page Title Section -->
+<section class="pt-32 pb-10 bg-white">
+<div class="container mx-auto px-4">
+<h1 class="text-4xl md:text-5xl font-bold text-primary text-center">Past High Sheriffs</h1>
+<p class="text-xl text-gray-600 text-center mt-4 max-w-3xl mx-auto">Exploring the rich history and legacy of those who have served as High Sheriff of Buckinghamshire</p>
+</div>
+</section>
+<!-- Previous High Sheriff Feature Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-12">Past High Sheriffs</h2>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/035a224247c13297aab0c4c3123ecda4.jpeg" alt="Kurshida Mirza BEM" class="w-full h-auto rounded-lg shadow-xl object-cover">
+</div>
+<div class="w-full">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Kurshida Mirza BEM</h3>
+<p class="text-lg text-gray-700 mb-6">High Sheriff 2023-2024</p>
+<p class="text-lg text-gray-700 mb-6">Kurshida has a passion for working with communities and has developed a unique vehicle in Milton Keynes (MK) for engaging with diverse communities and in particular Muslims and faith-based communities who are seldom heard and less visible.</p>
+<p class="text-lg text-gray-700 mb-6">Kurshida is the founder of Trubys Garden Tea Room, an interfaith pop-up café promoting positive dialogue between Muslims and the wider community in MK – this has become an important conduit for community engagement with diverse communities from 2020-2023, Chair of Citizens MK from 2016-2019, and Chair of Midlands Region of the Housing Learning and Improvement Network (Housing LIN) between 2016-2020.</p>
+<p class="text-lg text-gray-700 mb-6">Kurshida has a research, policy and strategy background working for local and central government with strong track record in social action. She held many portfolios in Government including leading on housing for vulnerable and older people, community engagement, tackling workless and homelessness.</p>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/d1d9ce8a-6c56-42a8-a896-67c65bd9cd9b" data-readdy="true" class="inline-block bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-button transition-colors duration-300 whitespace-nowrap">Read More</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Historical Context Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-primary mb-8">Historical Context</h2>
+<p class="text-lg text-gray-700 mb-6">There were 459 previous High Sheriffs of Buckinghamshire from 1575 to today. Prior to 1575, the High Sheriff of Buckinghamshire was combined with Bedfordshire. Those records date back to 1125, which adds another 318 to the list. So there have been 777 High Sheriffs overseeing Buckinghamshire since 1125.</p>
+<p class="text-lg text-gray-700 mb-6">Records before that time are much less reliable, with the earliest High Sheriff of Buckinghamshire being recorded as "Godric" before 1066, who was "killed in 1066".</p>
+</div>
+</div>
+</section>
+<!-- Past High Sheriffs Gallery -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-12">Past High Sheriffs Gallery</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Dame Ann Geraldine Limb (2023-2024) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5e754bc1c0d0cb14c27419e161d2144b.jpeg" alt="Dame Ann Geraldine Limb" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/3c50540f-5caf-4c48-b7a6-c842aedafa86" data-readdy="true">
+<h3 class="text-xl font-bold text-gray-800 hover:text-primary transition-colors">Dame Ann Geraldine Limb</h3>
+</a>
+<p class="text-gray-600 mb-2">2023-2024</p>
+<p class="text-gray-700">Stony Stratford</p>
+</div>
+</div>
+<!-- Debbie Brock (2022-2023) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/646748d4e2def413c17e0bf7c1cafe2f.jpeg" alt="Debbie Brock" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/c6ec0594-e2ee-431e-82ef-29b72affe4c2" data-readdy="true">
+<h3 class="text-xl font-bold text-gray-800 hover:text-primary transition-colors">Debbie Brock</h3>
+</a>
+<p class="text-gray-600 mb-2">2022-2023</p>
+<p class="text-gray-700">Emberton</p>
+</div>
+</div>
+<!-- George Rupert Anson (2021-2022) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/268b8f5e395c80aedce911769298517c.webp" alt="George Rupert Anson" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8eb4d64c-68e9-4c91-8d0b-f008e47b5369" data-readdy="true">
+<h3 class="text-xl font-bold text-gray-800 hover:text-primary transition-colors">George Rupert Anson</h3>
+</a>
+<p class="text-gray-600 mb-2">2021-2022</p>
+<p class="text-gray-700">Weedon</p>
+</div>
+</div>
+<!-- Andrew David Farncombe (2020-2021) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/f6e8f1d47cc1585a66900b872efed551.jpeg" alt="Andrew David Farncombe" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a391e3d8-dbfc-439a-8c24-e25b0c98590f" data-readdy="true">
+<h3 class="text-xl font-bold text-gray-800 hover:text-primary transition-colors">Andrew David Farncombe</h3>
+</a>
+<p class="text-gray-600 mb-2">2020-2021</p>
+<p class="text-gray-700">Beaconsfield</p>
+</div>
+</div>
+<!-- Julia Anne Upton (2019-2020) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/9964eaa9403bc73af437716ef2226e7e.jpeg" alt="Julia Anne Upton" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Julia Anne Upton</h3>
+<p class="text-gray-600 mb-2">2019-2020</p>
+<p class="text-gray-700">Little Linford, Milton Keynes</p>
+</div>
+</div>
+<!-- Professor Ruth Sarah Farwell (2018-2019) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/15f8e22e56b502b3df3c5ee58fb2ae95.jpeg" alt="Professor Ruth Sarah Farwell" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Ruth Sarah Farwell</h3>
+<p class="text-gray-600 mb-2">2018-2019</p>
+<p class="text-gray-700">High Wycombe</p>
+</div>
+</div>
+<!-- Peter Bhupatsing Kara (2017-2018) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/153e035d767d3bf65d65e9a00a3b8e00.jpeg" alt="Peter Bhupatsing Kara" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/5d991287-662a-4ea0-ad19-76c5b89d2de1" data-readdy="true">
+<h3 class="text-xl font-bold text-gray-800 hover:text-primary transition-colors">Peter Bhupatsing Kara</h3>
+</a>
+<p class="text-gray-600 mb-2">2017-2018</p>
+<p class="text-gray-700">Bletchley</p>
+</div>
+</div>
+<!-- Camilla Rose Soames (2016-2017) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/26b7fbfb57f18ea6c22e66dbdb042849.jpeg" alt="Camilla Rose Soames" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Camilla Rose Soames</h3>
+<p class="text-gray-600 mb-2">2016-2017</p>
+<p class="text-gray-700">Cuddington, Aylesbury</p>
+</div>
+</div>
+<!-- (Anna) Francesca Skelton (2015-2016) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/3a1bad27304653fc4afe14b773de0b93.png" alt="(Anna) Francesca Skelton" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">(Anna) Francesca Skelton</h3>
+<p class="text-gray-600 mb-2">2015-2016</p>
+<p class="text-gray-700">Great Linford, Milton Keynes</p>
+</div>
+</div>
+<!-- Joseph Gurney Barclay (2014-2015) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/f9e53814ef7a4cc11f6b98b4c07edcfc.jpeg" alt="Joseph Gurney Barclay" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Joseph Gurney Barclay</h3>
+<p class="text-gray-600 mb-2">2014-2015</p>
+<p class="text-gray-700">Great White End, Latimer, Chesham</p>
+</div>
+</div>
+<!-- Sir Stuart Hampson (2013-2014) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/7dce8cdfd17e70c409580a942dadb6df.jpeg" alt="Sir Stuart Hampson" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Sir Stuart Hampson</h3>
+<p class="text-gray-600 mb-2">2013-2014</p>
+<p class="text-gray-700">Bledlow Ridge</p>
+</div>
+</div>
+<!-- (Alison) Carolyn Cumming (2012-2013) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/c059da7293b7fe3966de467465a678f7.jpeg" alt="(Alison) Carolyn Cumming" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">(Alison) Carolyn Cumming</h3>
+<p class="text-gray-600 mb-2">2012-2013</p>
+<p class="text-gray-700">Maids Moreton, Buckingham</p>
+</div>
+</div>
+<!-- James Philip Godfrey Naylor (2011-2012) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/34535485f06d4dc6006e87f56d4a034a.jpeg" alt="James Philip Godfrey Naylor" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">James Philip Godfrey Naylor</h3>
+<p class="text-gray-600 mb-2">2011-2012</p>
+<p class="text-gray-700">Cublington, Leighton Buzzard</p>
+</div>
+</div>
+<!-- Elizabeth, Countess Howe (2010-2011) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/536bb90b838e5eddda98caf627bf5603.jpeg" alt="Elizabeth, Countess Howe" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Elizabeth, Countess Howe</h3>
+<p class="text-gray-600 mb-2">2010-2011</p>
+<p class="text-gray-700">Buckinghamshire</p>
+</div>
+</div>
+<!-- Allan Thomas Westray (2009-2010) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/2e98885c8b57a1b189c2876ac469d165.jpeg" alt="Allan Thomas Westray" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Allan Thomas Westray</h3>
+<p class="text-gray-600 mb-2">2009-2010</p>
+<p class="text-gray-700">Butlers Cross, Aylesbury</p>
+</div>
+</div>
+<!-- Peter John Thorogood (2008-2009) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/dbaf4333ff2b61d73a2b5be6c3b7cdfe.jpeg" alt="Peter John Thorogood" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Peter John Thorogood</h3>
+<p class="text-gray-600 mb-2">2008-2009</p>
+<p class="text-gray-700">Buckingham</p>
+</div>
+</div>
+<!-- Amanda Rose Nicholson (2007-2008) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/b30f1bd824ce4200ae4a8a0492e82b3e.png" alt="Amanda Rose Nicholson" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Amanda Rose Nicholson</h3>
+<p class="text-gray-600 mb-2">2007-2008</p>
+<p class="text-gray-700">Buckingham</p>
+</div>
+</div>
+<!-- Alexander Boswell (2006-2007) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/7f7d5f2ad1096c129e1a6cdb9b93dc4d.png" alt="Alexander Boswell" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Alexander Boswell</h3>
+<p class="text-gray-600 mb-2">2006-2007</p>
+<p class="text-gray-700">North Crawley</p>
+</div>
+</div>
+<!-- Jennifer Hopkirk (2005-2006) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5b3dc09407d6e35ed410b0a2791ed78f.jpeg" alt="Jennifer Hopkirk" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Jennifer Hopkirk</h3>
+<p class="text-gray-600 mb-2">2005-2006</p>
+<p class="text-gray-700">Parsonage Farm, Penn</p>
+</div>
+</div>
+<!-- Francis Patrick Strain Phillips (2004-2005) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/01f498ee3e3e14199e0f96cfad8a04eb.jpeg" alt="Francis Patrick Strain Phillips" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Francis Patrick Strain Phillips</h3>
+<p class="text-gray-600 mb-2">2004-2005</p>
+<p class="text-gray-700">Upper Farmhouse, Upton, Aylesbury</p>
+</div>
+</div>
+<!-- Richard Godber (2003-2004) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/44cbe09941bd100457cb62221bc8fe0a.jpeg" alt="Richard Godber" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Richard Godber</h3>
+<p class="text-gray-600 mb-2">2003-2004</p>
+<p class="text-gray-700">Hall Farm, Little Linford, Milton Keynes</p>
+</div>
+</div>
+<!-- Hon. Rupert Francis John Carington (2002-2003) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/2acdb092303912a589b2130e43e0ac9e.jpeg" alt="Hon. Rupert Francis John Carington" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Hon. Rupert Francis John Carington</h3>
+<p class="text-gray-600 mb-2">2002-2003</p>
+<p class="text-gray-700">The Manor House, Bledlow, Aylesbury</p>
+</div>
+</div>
+<!-- Alexander David Shephard (2001-2002) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/e05b2efaede561d60ebad3a92aff71ba.jpeg" alt="Alexander David Shephard" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Alexander David Shephard</h3>
+<p class="text-gray-600 mb-2">2001-2002</p>
+<p class="text-gray-700">Stonehouse, Penn</p>
+</div>
+</div>
+<!-- Martin Hubert Thomas Jourdan (2000-2001) -->
+<div class="sheriff-card bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/44938a650f9d894cb8a15db53141507c.jpeg" alt="Martin Hubert Thomas Jourdan" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800">Martin Hubert Thomas Jourdan</h3>
+<p class="text-gray-600 mb-2">2000-2001</p>
+<p class="text-gray-700">Wapping, Long Crendon, Aylesbury</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Full List Button Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4 text-center">
+<a href="https://en.wikipedia.org/wiki/High_Sheriff_of_Buckinghamshire#2000%E2%80%93present" target="_blank" class="inline-block bg-primary hover:bg-secondary text-white font-bold py-4 px-8 rounded-button transition-colors duration-300 whitespace-nowrap">
+Full List of High Sheriffs
+</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="hover:text-secondary transition-colors">News & Galleries</a></li>
+<li><a href="#contact" class="hover:text-secondary transition-colors">Contacts</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="scroll-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerOffset = 140; // Height of fixed header + nav
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+<script id="sheriff-card-animation">
+document.addEventListener('DOMContentLoaded', function() {
+const sheriffCards = document.querySelectorAll('.sheriff-card');
+sheriffCards.forEach(card => {
+card.addEventListener('mouseenter', function() {
+this.style.transform = 'translateY(-5px)';
+this.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)';
+});
+card.addEventListener('mouseleave', function() {
+this.style.transform = 'translateY(0)';
+this.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)';
+});
+});
+});
+</script>
+</body>
+</html>

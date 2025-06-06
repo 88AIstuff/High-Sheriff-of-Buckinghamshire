@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#47467f',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #0c3b6e;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.blog-content h2 {
+font-size: 1.875rem;
+font-weight: 700;
+color: #47467f;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+.blog-content h3 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #47467f;
+margin-top: 1.5rem;
+margin-bottom: 0.75rem;
+}
+.blog-content p {
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.blog-content ul, .blog-content ol {
+margin-bottom: 1.5rem;
+padding-left: 1.5rem;
+}
+.blog-content ul {
+list-style-type: disc;
+}
+.blog-content ol {
+list-style-type: decimal;
+}
+.blog-content li {
+margin-bottom: 0.5rem;
+}
+.blog-content blockquote {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+font-style: italic;
+margin: 1.5rem 0;
+color: #4b5563;
+}
+.blog-content img {
+border-radius: 8px;
+margin: 2rem 0;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.blog-content .image-caption {
+text-align: center;
+font-size: 0.875rem;
+color: #6b7280;
+margin-top: -1.5rem;
+margin-bottom: 2rem;
+}
+.blog-content .callout {
+background-color: #f8f9fa;
+border-left: 4px solid #47467f;
+padding: 1.5rem;
+margin: 1.5rem 0;
+border-radius: 8px;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="nav-link active-nav text-primary font-medium">News & Galleries</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="text-primary font-medium py-2">News & Galleries</a>
+</div>
+</div>
+</header>
+<!-- Blog Hero Banner -->
+<section class="w-full h-[500px] flex items-end justify-center text-white mt-16 relative pb-20">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"></div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/b1faec97ec991513adab29d876606247.png" alt="High Sheriff Community Engagement" class="absolute inset-0 w-full h-full object-cover object-top">
+<div class="container mx-auto px-4 text-center relative z-20">
+<div class="inline-block bg-secondary/90 px-4 py-2 rounded-sm mb-4">
+<span class="text-white font-medium">4 April 2025</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Declaration Gallery 2025</h1>
+</div>
+</section>
+<!-- Blog Content -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<!-- Blog Content -->
+<div class="blog-content">
+<p class="text-xl leading-relaxed mb-8">The declarations of the High Sheriff, the Deputy Sheriff and the Deputy Under Sheriff took place on 4th April at Jubilee Hall in Amersham.
+The ceremony was led by The Resident Judge Aylesbury and Amersham Crown Courts, His Honour Judge Jonathan Cooper and witness by the Chair of Buckinghamshire Magistrates Debbie Gibbs JP.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/76a99d4c02967b8ff3c7e590eba5c1bd.jpeg" alt="Pippa Kirkbride and Buckinghamshire Scouts Young People's Awards Presentation Day" class="w-full h-64 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/7cd27ffbb0880b1596f74305b85ee711.jpeg" alt="Judicial Procession" class="w-full h-64 object-cover rounded-lg">
+</div>
+<div class="image-caption"></div>
+<h2></h2>
+<p></p>
+<h3>Speeches</h3>
+<p></p>
+<p>Speeches were given by the New High Sheriff, Pippa Kirkbride, the previous High Sheriff, Kurshida Mirza BEM and HM Lord-Lieutenant of Buckinghamshire, The Countess Howe.</p>
+<ul>
+</ul>
+<h3>Prayers</h3>
+<p>Opening and Closing prayers were given by the new chaplain, Reverend Jonny Rapson.</p>
+<h2></h2>
+<p>
+</p>
+<ol>
+</ol>
+<p></p>
+<h3>Music</h3>
+<p>The fanfare for the High Sheriff by Paul Guenault, Director of Music, Buckinghamshire Music Trust was performed by members of Bucks County Youth Orchestra.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/ea7f6eb29c3e1a4bdc83a100e3c7cb14.jpeg" alt="High Sheriff Declaration Ceremony" class="w-full h-48 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/440d5fc50ad7d8f8cf4fa9ecdae391e7.jpeg" alt="High Sheriff with Police Representatives" class="w-full h-48 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/09769f589f36c2823ad72e86490ce994.jpeg" alt="Youth Recognition Awards" class="w-full h-48 object-cover rounded-lg">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/74c142209f6d047a42510c704dcd03f1.jpeg" alt="Formal Ceremony in Grand Hall" class="w-full h-48 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/824aabfc2e3ec3d25230628d1361f5be.jpeg" alt="Ceremonial Procession" class="w-full h-48 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/3c314a79a593c236cf6baa78d303cb6f.jpeg" alt="Reception with Dignitaries" class="w-full h-48 object-cover rounded-lg">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5840fddacecf674fa8e5f919f26900c7.jpeg" alt="Traditional Ceremony with Judges" class="w-full h-48 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/e7ad93303566ea1330be62d223cdd7a6.jpeg" alt="Distinguished Guests Networking" class="w-full h-48 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/8cbc583b22d181b384701f4ebe136828.jpeg" alt="Ceremonial Document Signing" class="w-full h-48 object-cover rounded-lg">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5af9dc91bc3b4692b306597bdd37a8a3.jpeg" alt="Youth Orchestra Performance" class="w-full h-48 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/750799ca748b2db6be48158e7accde12.jpeg" alt="Formal Reception Setting" class="w-full h-48 object-cover rounded-lg">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/bdeeef641494739d426ed4cf05e09bb1.jpeg" alt="Community Awards Presentation" class="w-full h-48 object-cover rounded-lg">
+</div>
+<div class="image-caption"></div>
+<h2></h2>
+<p></p>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-9 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="hover:text-secondary transition-colors">News & Galleries</a></li>
+<li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="image-lightbox-script">
+document.addEventListener('DOMContentLoaded', function() {
+const blogImages = document.querySelectorAll('.blog-content img');
+blogImages.forEach(image => {
+image.style.cursor = 'pointer';
+image.addEventListener('click', function() {
+const lightbox = document.createElement('div');
+lightbox.classList.add('fixed', 'inset-0', 'bg-black/90', 'flex', 'items-center', 'justify-center', 'z-50', 'p-4');
+const lightboxImg = document.createElement('img');
+lightboxImg.src = this.src;
+lightboxImg.classList.add('max-w-full', 'max-h-full', 'object-contain');
+const closeBtn = document.createElement('button');
+closeBtn.classList.add('absolute', 'top-4', 'right-4', 'text-white', 'text-4xl');
+closeBtn.innerHTML = '&times;';
+closeBtn.addEventListener('click', function() {
+document.body.removeChild(lightbox);
+});
+lightbox.appendChild(lightboxImg);
+lightbox.appendChild(closeBtn);
+lightbox.addEventListener('click', function(e) {
+if (e.target === lightbox) {
+document.body.removeChild(lightbox);
+}
+});
+document.body.appendChild(lightbox);
+});
+});
+});
+</script>
+<script id="scroll-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerOffset = 80; // Height of fixed header
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#343465',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #0c3b6e;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.blog-content h2 {
+font-size: 1.875rem;
+font-weight: 700;
+color: #343465;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+.blog-content h3 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #343465;
+margin-top: 1.5rem;
+margin-bottom: 0.75rem;
+}
+.blog-content p {
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.blog-content ul, .blog-content ol {
+margin-bottom: 1.5rem;
+padding-left: 1.5rem;
+}
+.blog-content ul {
+list-style-type: disc;
+}
+.blog-content ol {
+list-style-type: decimal;
+}
+.blog-content li {
+margin-bottom: 0.5rem;
+}
+.blog-content blockquote {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+font-style: italic;
+margin: 1.5rem 0;
+color: #4b5563;
+}
+.blog-content img {
+border-radius: 8px;
+margin: 2rem 0;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.blog-content .image-caption {
+text-align: center;
+font-size: 0.875rem;
+color: #6b7280;
+margin-top: -1.5rem;
+margin-bottom: 2rem;
+}
+.blog-content .callout {
+background-color: #f8f9fa;
+border-left: 4px solid #343465;
+padding: 1.5rem;
+margin: 1.5rem 0;
+border-radius: 8px;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="nav-link active-nav text-primary font-medium">News</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="text-primary font-medium py-2">News</a>
+</div>
+</div>
+</header>
+<!-- Blog Hero Banner -->
+<section class="w-full h-[500px] flex items-center justify-center text-white mt-16 relative">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"></div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/b1faec97ec991513adab29d876606247.png" alt="High Sheriff Community Engagement" class="absolute inset-0 w-full h-full object-cover object-top">
+<div class="container mx-auto px-4 text-center relative z-20 mt-[320px]">
+<div class="inline-block bg-[#daab36]/90 px-4 py-2 rounded-sm mb-4">
+<span class="text-white font-medium">4 May 2025</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">My first month as High Sheriff</h1>
+</div>
+</section>
+<!-- Blog Content -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<!-- Author Info -->
+<div class="flex items-center mb-12 border-b border-gray-200 pb-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/90385f6abe09f20a7e7bdd19746d4eb2.jpeg" alt="Pippa Kirkbridge" class="w-16 h-16 rounded-full object-cover mr-4">
+<div>
+<h3 class="font-semibold text-lg">Pippa Kirkbride</h3>
+<p class="text-gray-600">High Sheriff of Buckinghamshire</p>
+</div>
+</div>
+<!-- Blog Content -->
+<div class="blog-content">
+<p class="text-xl leading-relaxed mb-8">The first month of my tenure as High Sheriff of Buckinghamshire has been a truly inspiring and humbling experience. Travelling across the county, I have had the distinct privilege of meeting some remarkable individuals and witnessing the extraordinary dedication behind numerous vital causes. These encounters have filled me with immense pride for Buckinghamshire and the strong sense of community that thrives within it. It is clear that countless hours of tireless work are being invested to foster safer and more inclusive environments for all who live and work here. While celebrating these achievements, I also recognise the ongoing needs within our communities, and I eagerly anticipate the opportunity to contribute and shine a light on more of these incredible efforts throughout the coming year.</p>
+<p class="text-xl leading-relaxed mb-8">Here are some of the amazing people I have had the pleasure of meeting over the past month:</p>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-2/3">
+<h3>Declaration Ceremony</h3>
+<p class="text-[18px]">Pippa was sworn in as the new High Sheriff of Buckinghamshire. The Declaration Ceremony was held at the Jubilee Hall, home to the 2nd Amersham on the Hill Scout Group. Pippa’s vision for the year is twofold: to support the young people of Buckinghamshire, aiming to provide them with the best start in life and to foster a lifelong love of volunteering within the community.</p>
+<p class="text-[18px]"></p>
+</div>
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/d435e7f9b44ba3695bd0f42f57cf863c.png" alt="Talkback Talent Show" class="w-full h-auto object-cover rounded-lg">
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/577bfd9a44a19e4b6148a0cb3dfbc9f4.png" alt="Community Wellbeing Hub" class="w-full h-auto object-cover rounded-lg">
+</div>
+<div class="md:w-2/3">
+<h3>Freemasons</h3>
+<p class="text-[18px]">My first engagement as High Sheriff of Buckinghamshire was to attend the Freemasons celebration event on behalf of the Buckinghamshire Masonic Centenary Fund at the Aylesbury Waterside Theatre, alongside the Lord-Lieutenant of Buckinghamshire. It was a wonderfully uplifting afternoon, where we heard from 16 local charities who have benefited from the Freemasons charitable giving.</p>
+</div>
+</div>
+<div class="image-caption"></div>
+<p></p>
+<h3>Annual Scouting Dinner</h3>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-1/3 -mt-[30px]">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/a3b7bedc666d28620543c2b9a3972960.png" alt="High Sheriff visiting Amersham Football Club" class="w-full h-auto object-cover rounded-lg">
+</div>
+<div class="md:w-2/3">
+<p class="text-[18px]">On April 12th, I had the pleasure of attending the Annual Scouting Dinner, along with the Lord-Lieutenant of Buckinghamshire. What a wonderful evening celebrating the diverse and fantastic achievements of the King’s Scouts, the Queen’s Guides, Duke of Edinburgh Award Holders and all the Scouting Volunteers across the county. Thank you to everyone who made me so welcome and to Horwood House for a delicious dinner.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-2/3">
+<h3>Scannappeal Walk</h3>
+<p class="text-[18px]">As Vice President for Heart of Bucks the Community Foundation this year, it was my pleasure to join them on their second 25th Anniversary walk in Amersham and Chesham. Scannappeal works independently of the NHS with the sole aim of raising funds to provide lifesaving and life changing equipment for Buckinghamshire NHS hospitals and community health services.</p>
+</div>
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/a046ad25a76d18afe712b7968cbf3024.png" alt="Youth Leadership Conference" class="w-full h-auto object-cover rounded-lg">
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/a907a2e111be474f703255176dc997ac.png" alt="Care Home Visit" class="w-full h-auto object-cover rounded-lg">
+</div>
+<div class="md:w-2/3">
+<h3>Talkback Talent Show</h3>
+<p class="text-[18px]">What a truly uplifting afternoon at the Talkback Talent Show where I had the privilege of presenting awards to so many talented participants. Talkback supports people with autism and learning disabilities, enabling them to embrace new opportunities and providing them with constant growth. Thanks must go to Jay, Tish and each and every valuable supporter who made the event possible. Well done!</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-2/3">
+<h3>Wellbeing Hub</h3>
+<p class="text-[18px]">Alongside the Lord-Lieutenant, I was lucky enough to witness extraordinary kindness amongst the Buckinghamshire Community Wellbeing Hub as they handed over their beautiful collection of handmade items to the neonatal unit at Stoke Mandeville Hospital. The group brings together those who have a passion for knitting, but also enjoy the benefits of supporting each other through their hobby. It builds friendships and combats loneliness.</p>
+</div>
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/7c34b855d6aa87555f722a000db0ff71.png" alt="Police Cadets Ceremony" class="w-full h-auto object-cover rounded-lg">
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/ffec0487202e141f0c1ef17d20003d7f.png" alt="Community Garden Project" class="w-full h-auto object-cover rounded-lg">
+</div>
+<div class="md:w-2/3">
+<h3>Amersham Football</h3>
+<p class="text-[18px]">Thank you to Amersham Football for explaining how the funding from Heart of Bucks has paid for much needed rewiring and improvements to the clubhouse. As a result, a sustainable space has been created for use by the wider community. We were lucky enough to witness this as during our visit we also had the pleasure of joining the meeting of Cafe 23. This wonderful group provides a welcome space for people living with dementia.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-2/3">
+<h3>Movers and Shakers</h3>
+<p class="text-[18px]">What fun to join Movers and Shakers in Chesham and to join them for their weekly exercise routine. Drawn predominantly, but not exclusively from the Southeast Asian community, the men have been coming together for many years for exercise, intellectual and recreational activities to improve their physical and mental wellbeing.
+Thank you to Mohammed Waris and the group for such a warm welcome.</p>
+</div>
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/c1bab0d172f3a18d661a928f52ff6608.png" alt="Business Innovation Awards" class="w-full h-auto object-cover rounded-lg">
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/b3f09a9c75cee617ec1c3af7ddca178f.png" alt="Emergency Services Day" class="w-full h-auto object-cover rounded-lg">
+</div>
+<div class="md:w-2/3">
+<h3>Chesham Youth</h3>
+<p class="text-[18px]">Thank you to Chesham Youth Centre for welcoming us to their wonderful community space. Their primary purpose is to provide a safe space and facilities for young people to develop their physical and mental health so that their conditions of life may be improved. What a hidden gem in Chesham the Centre is and thank you for for your hospitality
+The next leg on the Heart of Bucks 25th Anniversary walk was with Kathryn Graves from Chesham Town Council. A recent grant from HOB to replace a sluice gate has had such a great impact on local houses, businesses and recreation spaces by reducing the flooding that had become a regular occurrence. (It was such a fun visit in my high heels and ostrich feathers viewing the sluice gate) Who knew!!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="hover:text-secondary transition-colors">News</a></li>
+<li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="#" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="image-lightbox-script">
+document.addEventListener('DOMContentLoaded', function() {
+const blogImages = document.querySelectorAll('.blog-content img');
+blogImages.forEach(image => {
+image.style.cursor = 'pointer';
+image.addEventListener('click', function() {
+const lightbox = document.createElement('div');
+lightbox.classList.add('fixed', 'inset-0', 'bg-black/90', 'flex', 'items-center', 'justify-center', 'z-50', 'p-4');
+const lightboxImg = document.createElement('img');
+lightboxImg.src = this.src;
+lightboxImg.classList.add('max-w-full', 'max-h-full', 'object-contain');
+const closeBtn = document.createElement('button');
+closeBtn.classList.add('absolute', 'top-4', 'right-4', 'text-white', 'text-4xl');
+closeBtn.innerHTML = '&times;';
+closeBtn.addEventListener('click', function() {
+document.body.removeChild(lightbox);
+});
+lightbox.appendChild(lightboxImg);
+lightbox.appendChild(closeBtn);
+lightbox.addEventListener('click', function(e) {
+if (e.target === lightbox) {
+document.body.removeChild(lightbox);
+}
+});
+document.body.appendChild(lightbox);
+});
+});
+});
+</script>
+<script id="scroll-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerOffset = 80; // Height of fixed header
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>

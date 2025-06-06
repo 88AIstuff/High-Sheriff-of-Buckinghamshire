@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#343465',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #0c3b6e;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.blog-content h2 {
+font-size: 1.875rem;
+font-weight: 700;
+color: #343465;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+.blog-content h3 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #343465;
+margin-top: 1.5rem;
+margin-bottom: 0.75rem;
+}
+.blog-content p {
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.blog-content ul, .blog-content ol {
+margin-bottom: 1.5rem;
+padding-left: 1.5rem;
+}
+.blog-content ul {
+list-style-type: disc;
+}
+.blog-content ol {
+list-style-type: decimal;
+}
+.blog-content li {
+margin-bottom: 0.5rem;
+}
+.blog-content blockquote {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+font-style: italic;
+margin: 1.5rem 0;
+color: #4b5563;
+}
+.blog-content img {
+border-radius: 8px;
+margin: 2rem 0;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.blog-content .image-caption {
+text-align: center;
+font-size: 0.875rem;
+color: #6b7280;
+margin-top: -1.5rem;
+margin-bottom: 2rem;
+}
+.blog-content .callout {
+background-color: #f8f9fa;
+border-left: 4px solid #343465;
+padding: 1.5rem;
+margin: 1.5rem 0;
+border-radius: 8px;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="nav-link active-nav text-primary font-medium">News & Galleries</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="text-primary font-medium py-2">News & Galleries</a>
+</div>
+</div>
+</header>
+<!-- Blog Hero Banner -->
+<section class="w-full h-[500px] flex items-center justify-center text-white mt-16 relative">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"></div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5e7e4cf889a0e3b6081e3d5b466c3314.jpeg" alt="High Sheriff Community Engagement" class="absolute inset-0 w-full h-full object-cover object-top">
+<div class="container mx-auto px-4 text-center relative z-20 mt-[240px]">
+<div class="inline-block bg-[#daab36]/90 px-4 py-2 rounded-sm mb-4">
+<span class="text-white font-medium">4 April 2025</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Buckinghamshire declares its new High Sheriff: Pippa Kirkbride is sworn in</h1>
+</div>
+</section>
+<!-- Blog Content -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<!-- Author Info -->
+<div class="mb-12 border-b border-gray-200 pb-8"></div>
+<!-- Blog Content -->
+<div class="blog-content">
+<p class="text-xl leading-relaxed mb-8">Buckinghamshire has officially welcomed its new High Sheriff, Pippa Kirkbride, who has been sworn into office for the year 2025-26.</p>
+<p class="text-xl leading-relaxed mb-8">The formal declaration ceremony, held at Jubilee Hall in Amersham on 4th April 2025, marked the commencement of Pippa’s tenure, a role steeped in tradition and service to the county. The Office of High Sheriff is the oldest secular role after the Crown and dates from Saxon times. Originally responsible for maintaining law and order and collecting taxes for the King, the role has evolved significantly over the centuries. Today, as the King’s representative for law and order, this year-long, non-political and independent appointment provides support for the Royal Family, the Judiciary, the Police and the emergency services without resort to the public purse.</p>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-2/3">
+<h3></h3>
+<p class="text-[18px]">The High Sheriff offers encouragement to those supporting the charity and voluntary sectors and actively encourages crime prevention. The role is to uphold and enhance the ancient office while making a meaningful contribution to the county of Buckinghamshire.</p>
+<p class="text-[18px]">Alongside these longstanding duties, Pippa spoke about two of her own themes that she is passionate about and will be focusing on this year:</p>
+</div>
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/d435e7f9b44ba3695bd0f42f57cf863c.png" alt="Talkback Talent Show" class="w-full h-auto object-cover rounded-lg">
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/e7ad93303566ea1330be62d223cdd7a6.jpeg" alt="Community Wellbeing Hub" class="w-full h-auto object-cover rounded-lg">
+</div>
+<div class="md:w-2/3">
+<h3>Providing young people with the best possible start in life</h3>
+<p class="text-[18px]">Pippa believes that Buckinghamshire’s youth, the innovators, leaders, and change-makers of tomorrow, represent its future. The county benefits from excellent schools, dedicated educators, and numerous youth-focused organisations. However, significant challenges persist. Not every young person begins with equal opportunities, and many families require support to ensure their children’s success.</p>
+</div>
+</div>
+<div class="image-caption"></div>
+<h3></h3>
+<p></p>
+<h3></h3>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-1/3 -mt-[30px]">
+</div>
+<div class="md:w-2/3">
+<p class="text-[18px]">Pippa explained “Early intervention schemes have demonstrated their effectiveness in significantly reducing youth offending rates. This targeted support is not only effective but also highly efficient, improving long-term outcomes for families and communities. During my tenure, I aim to highlight and support initiatives that build confidence, resilience, and equip youth with essential life tools through education, employment, or mentoring programmes”</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="md:w-2/3">
+<h3>Volunteering for life</h3>
+<p class="text-[18px]">Pippa says that– “when people talk about volunteering, they often think about getting involved with a charity, helping in a shop, running a stall at a fundraiser or supporting a food bank. These roles are vital and such volunteering ensures charities are able to continue their work, but volunteering goes far beyond that”</p>
+</div>
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/b3f09a9c75cee617ec1c3af7ddca178f.png" alt="Youth Leadership Conference" class="w-full h-auto object-cover rounded-lg">
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 mb-8">
+<div class="w-full">
+<h3></h3>
+<p class="text-[18px]">She said "The justice sector, for instance, benefits from peer mentors in prisons, probation support, Magistrates, and restorative justice volunteers. It's about recognising inherent value, dignity, and kindness".</p>
+<p class="text-[18px]">Pippa sees true benefit for the volunteer as well as the beneficiaries. "Volunteering combats stress, reduces isolation, and provides a sense of purpose. My own experience, finding a new chapter at Citizens Advice after redundancy in my fifties, attests to this".</p>
+<p class="text-[18px]">Despite its significance, Pippa is aware that volunteer work often goes unacknowledged. So, she will celebrate young volunteers in June at Penn House, with thanks to Earl and Countess Howe. Furthermore, she is collaborating with Chris Hall on 'Heart of Buckinghamshire,' a photography and storytelling initiative capturing the diverse facets of volunteering. Organisations are invited to participate in this project, which will culminate in an autumn exhibition.</p>
+<p class="text-[18px]">Pippa brings her own powerful legacy of community service. Her decade-long volunteer work with Citizens Advice as a Money Advice Caseworker, and her support for Sense, the deafblind charity, demonstrate her dedication to vulnerable individuals. A strong advocate for education, she served as a school governor, notably chairing The Beacon's Admissions and Marketing Committee. driven impactful fundraising and grant initiatives, including the Young Futures Fund. Passionate about volunteering, she champions its transformative power, believing in its ability to build stronger communities and enrich lives.</p>
+<p class="text-[18px]">"I am looking forward to being the High Sheriff of Buckinghamshire in 2025-26. It will be a privilege to be able to serve in this role in the county, and I will be happy to support and spotlight the work of the amazing range of volunteer organisations I know make an enormous difference.
+As High Sheriff, I invite you all to join me in championing these causes. Let us work together to lift up our young people, to support them in fulfilling their potential, and to recognise and celebrate the power of volunteering in shaping a stronger, more connected Buckinghamshire.”
+Throughout her year in office, Pippa is committed to upholding all of the duties and responsibilities of The High Sheriff alongside driving her own initiatives in the communities. Buckinghamshire residents can anticipate a year of dedicated service and community engagement under her leadership.
+Congratulations Pippa!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/8bd90727-ab0e-43f2-b0b9-bd21ebeea001" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/a6ec41eb-0951-456b-a3a8-7d4fa8cde7b9" data-readdy="true" class="hover:text-secondary transition-colors">News & Galleries</a></li>
+<li><a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/f7cc9433-14db-4474-b8c6-96d77b3f4432" data-readdy="true" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="image-lightbox-script">
+document.addEventListener('DOMContentLoaded', function() {
+const blogImages = document.querySelectorAll('.blog-content img');
+blogImages.forEach(image => {
+image.style.cursor = 'pointer';
+image.addEventListener('click', function() {
+const lightbox = document.createElement('div');
+lightbox.classList.add('fixed', 'inset-0', 'bg-black/90', 'flex', 'items-center', 'justify-center', 'z-50', 'p-4');
+const lightboxImg = document.createElement('img');
+lightboxImg.src = this.src;
+lightboxImg.classList.add('max-w-full', 'max-h-full', 'object-contain');
+const closeBtn = document.createElement('button');
+closeBtn.classList.add('absolute', 'top-4', 'right-4', 'text-white', 'text-4xl');
+closeBtn.innerHTML = '&times;';
+closeBtn.addEventListener('click', function() {
+document.body.removeChild(lightbox);
+});
+lightbox.appendChild(lightboxImg);
+lightbox.appendChild(closeBtn);
+lightbox.addEventListener('click', function(e) {
+if (e.target === lightbox) {
+document.body.removeChild(lightbox);
+}
+});
+document.body.appendChild(lightbox);
+});
+});
+});
+</script>
+<script id="scroll-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerOffset = 80; // Height of fixed header
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
