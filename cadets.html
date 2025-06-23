@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thames Valley Police Volunteer Police Cadets</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#343465", secondary: "#c9a84a" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"/>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Open Sans', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+      font-family: 'Open Sans', sans-serif;
+      }
+      .nav-link {
+      position: relative;
+      }
+      .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #0c3b6e;
+      transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+      width: 100%;
+      }
+      .active-nav::after {
+      width: 100%;
+      }
+      .blog-content h2 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: #343465;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      }
+      .blog-content h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #343465;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      }
+      .blog-content p {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      }
+      .blog-content ul, .blog-content ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+      }
+      .blog-content ul {
+      list-style-type: disc;
+      }
+      .blog-content ol {
+      list-style-type: decimal;
+      }
+      .blog-content li {
+      margin-bottom: 0.5rem;
+      }
+      .blog-content blockquote {
+      border-left: 4px solid #c9a84a;
+      padding-left: 1.5rem;
+      font-style: italic;
+      margin: 1.5rem 0;
+      color: #4b5563;
+      }
+      .blog-content img {
+      border-radius: 8px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      .blog-content .image-caption {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+      }
+      .blog-content .callout {
+      background-color: #f8f9fa;
+      border-left: 4px solid #343465;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <a href="https://highsheriffofbuckinghamshire.org/index.html">
+            <img
+              src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png"
+              alt="High Sheriff Crest"
+              class="w-16 h-auto"/>
+          </a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="https://highsheriffofbuckinghamshire.org/index.html"
+            class="nav-link text-gray-700 hover:text-primary font-medium"
+            >Home</a>
+          <a href="https://highsheriffofbuckinghamshire.org/team.html"
+            class="nav-link text-gray-700 hover:text-primary font-medium"
+            >Team</a>
+          <a href="https://highsheriffofbuckinghamshire.org/news.html"
+            class="nav-link active-nav text-primary font-medium"
+            >News</a>
+        </nav>
+        <div class="md:hidden w-10 h-10 flex items-center justify-center">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-700 hover:text-primary">
+            <i class="ri-menu-line ri-2x"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-lg absolute w-full">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+          <a href="https://highsheriffofbuckinghamshire.org/index.html"
+            class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100"
+            >Home</a>
+          <a href="https://highsheriffofbuckinghamshire.org/team.html"
+            class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100"
+            >Team</a>
+          <a href="https://highsheriffofbuckinghamshire.org/news.html"
+            class="text-primary font-medium py-2"
+            >News</a>
+        </div>
+      </div>
+    </header>
+    <!-- Blog Hero Banner -->
+    <section
+      class="w-full h-[500px] flex items-center justify-center text-white mt-16 relative">
+      <div
+    class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10">
+    </div>
+      <img
+        src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5e7e4cf889a0e3b6081e3d5b466c3314.jpeg"
+        alt="Thames Valley Police Cadets"
+        class="absolute inset-0 w-full h-full object-cover object-top"/>
+      <div class="container mx-auto px-4 text-center relative z-20 mt-[290px]">
+        <div class="inline-block bg-[#daab36]/90 px-4 py-2 rounded-sm mb-4">
+          <span class="text-white font-medium">23 June 2025</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+          Thames Valley Police Volunteer Police Cadets
+        </h1>
+      </div>
+    </section>
+    <!-- Blog Content -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Author Info -->
+          <div class="mb-12 flex items-center gap-4">
+            <img
+              src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/90385f6abe09f20a7e7bdd19746d4eb2.jpeg"
+              alt="Pippa Kirkbride"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+            <span class="text-gray-700 font-medium">By Pippa Kirkbride</span>
+          </div>
+          <!-- Blog Content -->
+          <div class="blog-content">
+            <p class="text-xl leading-relaxed mb-8">
+              The Thames Valley Police Volunteer Police Cadets (VPC) scheme is a
+              structured, inclusive youth programme that gives young people the
+              opportunity to develop confidence, leadership skills and a sense
+              of social responsibility, while building positive relationships
+              with their local communities and the police.</p>
+            <p class="text-xl leading-relaxed mb-8">
+              Young people aged 13–18 are invited to take part in weekly cadet
+              sessions and volunteer at community events, supporting
+              neighbourhood policing initiatives and crime prevention work. With
+              an emphasis on teamwork, active citizenship, and the spirit of
+              adventure, the scheme gives cadets the chance to be heard,
+              contribute meaningfully to society, and develop into outstanding
+              young citizens.</p>
+            <p class="text-xl leading-relaxed mb-8">
+              The scheme is open to all, regardless of background, ability or
+              previous experience. In fact, 25% of each unit is made up of
+              cadets from vulnerable or disadvantaged backgrounds, including
+              those who may have experienced challenges or felt disconnected
+              from their community. The VPC provides a safe, supportive
+              environment where young people can gain a practical understanding
+              of policing, build resilience, and explore new opportunities in a
+              fun and friendly setting.</p>
+            <!-- Two side-by-side images -->
+            <div class="flex flex-col md:flex-row gap-8 mb-12">
+              <div class="md:w-1/2">
+                <img
+                  src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/898992208f9c05999becc15fc2b2d787.jpeg"
+                  alt="Police Cadets Community Service"
+                  class="w-full h-auto object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <div class="md:w-1/2">
+                <img
+                  src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/f163d6d1a87712f1e17cb4bf01518fc7.jpeg"
+                  alt="Police Cadets Training"
+                  class="w-full h-auto object-cover rounded-lg shadow-md"
+                />
+              </div>
+            </div>
+            <!-- Key Features Section -->
+            <h2 class="text-3xl font-bold text-primary mb-6">
+              Key Features of the VPC Scheme
+            </h2>
+            <div class="bg-gray-50 rounded-lg p-6 mb-12">
+              <ul class="list-disc pl-6 space-y-4">
+                <li class="text-lg">
+                  Open to young people aged 13–18, with priority given to
+                  13–16-year-olds
+                </li>
+                <li class="text-lg">
+                  Weekly two-hour sessions and three hours of monthly community
+                  volunteering
+                </li>
+                <li class="text-lg">
+                  Four-year training curriculum covering leadership,
+                  citizenship, and policing
+                </li>
+                <li class="text-lg">
+                  Cadets wear uniform and represent the diversity of their
+                  community
+                </li>
+                <li class="text-lg">
+                  Units are supported by police officers, police staff, and
+                  adult volunteers
+                </li>
+              </ul>
+            </div>
+            <!-- National Vision Section -->
+            <h2 class="text-3xl font-bold text-primary mb-6">
+              National Vision and Impact
+            </h2>
+            <div class="mb-12">
+              <p class="text-lg mb-4">
+                The Volunteer Police Cadets is the nationally recognised
+                uniformed youth group for policing in England, Wales, and
+                Scotland. It operates under the National Police Chiefs’ Council
+                framework, sharing common aims while being delivered flexibly at
+                a local level.
+              </p>
+              <p class="text-lg">
+                The national vision is to be a world-class, socially inclusive
+                youth organisation built on the values of British policing.
+                Through youth-led social action, the VPC helps young people
+                build character and confidence, while strengthening trust and
+                communication between police and the public. It is not a
+                recruitment tool for future police officers, but a powerful
+                platform for young people to have a voice, make a difference,
+                and grow into responsible, engaged adults.
+              </p>
+            </div>
+            <!-- Role of High Sheriff Section -->
+            <h2 class="text-3xl font-bold text-primary mb-6">
+              The Role of the High Sheriff
+            </h2>
+            <div class="mb-12">
+              <p class="text-lg mb-4">
+                As an active supporter of youth and community initiatives across
+                Buckinghamshire, the High Sheriff is proud to champion the
+                Thames Valley Police Cadet scheme as part of her shrieval year.
+                The High Sheriff plays a ceremonial and ambassadorial role,
+                recognising and encouraging young cadets in their efforts to
+                serve the community and grow in character.
+              </p>
+              <p class="text-lg">
+                This year, our High Sheriff Cadet is Molly Dixon, who has been a
+                dedicated cadet for the past three years since joining at the
+                age of 13. Molly has made an exceptional contribution, earning
+                the title of Cadet of the Year from Thames Valley Police and
+                serving as the Mayor’s Cadet in Beaconsfield last year. Her
+                journey highlights the positive, lasting impact that the VPC
+                scheme can have on a young person’s development and civic
+                engagement.
+              </p>
+            </div>
+            <!-- Why Join Section -->
+            <h2 class="text-3xl font-bold text-primary mb-6">
+              Why Join the VPC?
+            </h2>
+            <div class="bg-gray-50 rounded-lg p-6 mb-12">
+              <p class="text-lg mb-4">
+                Joining the Thames Valley Police Volunteer Police Cadets offers
+                numerous benefits:
+              </p>
+              <ul class="list-disc pl-6 space-y-3">
+                <li class="text-lg">Make new friends and have fun</li>
+                <li class="text-lg">Learn new skills and challenge yourself</li>
+                <li class="text-lg">
+                  Volunteer and make a difference in your community
+                </li>
+                <li class="text-lg">
+                  Gain valuable insights into policing and public service
+                </li>
+                <li class="text-lg">
+                  Become part of a diverse and inclusive youth network
+                </li>
+              </ul>
+            </div>
+            <!-- Two more side-by-side images -->
+            <div class="flex flex-col md:flex-row gap-8 mb-12">
+              <div class="md:w-1/2">
+                <img
+                  src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5b249985cb3065496a1df422ea777c14.jpeg"
+                  alt="Police Cadets Award Ceremony"
+                  class="w-full h-auto object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <div class="md:w-1/2">
+                <img
+                  src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/6b61cb9b5c197f9031265dec46212641.jpeg"
+                  alt="Police Cadets Team Building"
+                  class="w-full h-auto object-cover rounded-lg shadow-md"
+                />
+              </div>
+            </div>
+            <!-- Call to Action -->
+            <div
+              class="bg-primary text-white rounded-lg py-2 px-4 text-center mb-8"
+            >
+              <h2 class="text-2xl font-bold mb-2"></h2>
+              <p class="text-xl">
+                Pippa is committed to promoting opportunities that inspire young
+                people, strengthen community ties, and build a safer, more
+                connected society. The Volunteer Police Cadets are an
+                outstanding example of these values in action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="https://highsheriffofbuckinghamshire.org/index.html"
+                  class="hover:text-secondary transition-colors"
+                  >Home</a>
+              </li>
+              <li>
+                <a href="https://highsheriffofbuckinghamshire.org/team.html"
+                  class="hover:text-secondary transition-colors"
+                  >Team</a>
+              </li>
+              <li>
+                <a href="https://readdy.ai/home/2eda6b78-f831-49b3-96"
+                  class="hover:text-secondary transition-colors"
+                  >News</a>
+              </li>
+              <li>
+                <a href="https://highsheriffofbuckinghamshire.org/news.html"
+                  class="hover:text-secondary transition-colors"></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+            <div class="flex space-x-4 mb-8">
+              <a href="https://www.instagram.com/hisheriffbucks/"
+                data-readdy="true"
+                class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/"
+                data-readdy="true"
+                class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a href="mailto:buckinghamshire@highsheriff.com"
+                class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+                <i class="ri-mail-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/20 pt-8 text-center text-sm">
+          <p>
+            &copy; 2025 Office of the High Sheriff of Buckinghamshire. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script id="mobile-menu-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+          // Change icon based on menu state
+          const icon = mobileMenuButton.querySelector("i");
+          if (mobileMenu.classList.contains("hidden")) {
+            icon.classList.remove("ri-close-line");
+            icon.classList.add("ri-menu-line");
+          } else {
+            icon.classList.remove("ri-menu-line");
+            icon.classList.add("ri-close-line");
+          }
+        });
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        mobileMenuLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+            const icon = mobileMenuButton.querySelector("i");
+            icon.classList.remove("ri-close-line");
+            icon.classList.add("ri-menu-line");
+          });
+        });
+      });
+    </script>
+    <script id="image-lightbox-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const blogImages = document.querySelectorAll(".blog-content img");
+        blogImages.forEach((image) => {
+          image.style.cursor = "pointer";
+          image.addEventListener("click", function () {
+            const lightbox = document.createElement("div");
+            lightbox.classList.add(
+              "fixed",
+              "inset-0",
+              "bg-black/90",
+              "flex",
+              "items-center",
+              "justify-center",
+              "z-50",
+              "p-4",
+            );
+            const lightboxImg = document.createElement("img");
+            lightboxImg.src = this.src;
+            lightboxImg.classList.add("max-w-full", "max-h-full", "object-contain");
+            const closeBtn = document.createElement("button");
+            closeBtn.classList.add(
+              "absolute",
+              "top-4",
+              "right-4",
+              "text-white",
+              "text-4xl",
+            );
+            closeBtn.innerHTML = "&times;";
+            closeBtn.addEventListener("click", function () {
+              document.body.removeChild(lightbox);
+            });
+            lightbox.appendChild(lightboxImg);
+            lightbox.appendChild(closeBtn);
+            lightbox.addEventListener("click", function (e) {
+              if (e.target === lightbox) {
+                document.body.removeChild(lightbox);
+              }
+            });
+            document.body.appendChild(lightbox);
+          });
+        });
+      });
+    </script>
+    <script id="scroll-animation-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              const headerOffset = 80; // Height of fixed header
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition =
+                elementPosition + window.pageYOffset - headerOffset;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
