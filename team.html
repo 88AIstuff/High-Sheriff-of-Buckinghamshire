@@ -4,8 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Team - High Sheriff of Buckinghamshire</title>
-<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-<script>tailwind.config={theme:{extend:{colors:{primary:'#47467f',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<script src="https://cdn.tailwindcss.com/3.4.16">
+</script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { primary: "#47467f", secondary: "#c9a84a" },
+      borderRadius: {
+        none: "0px",
+        sm: "4px",
+        DEFAULT: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        full: "9999px",
+        button: "8px",
+      },
+    },
+  },
+};
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -59,12 +80,14 @@ color: white;
 <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
 <div class="container mx-auto px-4 py-3 flex justify-between items-center">
 <div class="flex items-center">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true">
 <img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/4b5a729e3b2a9087b26f92911a57fd25.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
 </div>
 <nav class="hidden md:flex items-center space-x-8">
-<a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/index.html" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
-<a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/team.html" class="nav-link active-nav text-primary font-medium">Team</a>
-<a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/news.html" class="nav-link text-gray-700 hover:text-primary font-medium">News</a>
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="nav-link active-nav text-primary font-medium">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">News</a>
 </nav>
 <div class="md:hidden w-10 h-10 flex items-center justify-center">
 <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
@@ -75,9 +98,9 @@ color: white;
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
 <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
-<a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/index.html" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
-<a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/team.html" class="text-primary font-medium py-2 border-b border-gray-100">Team</a>
-<a href=https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/news.html" class="text-gray-700 hover:text-primary font-medium py-2">News</a>
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2">News</a>
 </div>
 </div>
 </header>
@@ -95,6 +118,8 @@ color: white;
 <button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="high-sheriff">High Sheriff</button>
 <button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="under-sheriff">Under Sheriff</button>
 <button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="multi-faith">High Sheriff's Chaplain</button>
+<button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="cadet" onclick="document.getElementById('cadet').scrollIntoView({behavior: 'smooth', block: 'start'})">High Sheriff's Cadet</button>
+<button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="spotlight" onclick="document.getElementById('spotlight').scrollIntoView({behavior: 'smooth', block: 'start'})">Spotlight</button>
 <button class="team-nav-button bg-primary text-white px-6 py-2 rounded-button font-medium transition-all whitespace-nowrap" data-target="nomination-panel">Nomination Panel</button>
 </div>
 </div>
@@ -125,14 +150,11 @@ color: white;
 <div class="w-full">
 <h3 class="text-2xl font-bold text-gray-800 mb-6">Pippa Kirkbride</h3>
 <p class="text-lg text-gray-700 mb-6">Pippa Kirkbride is the High Sheriff of Buckinghamshire for the year April 2025 – March 2026.</p>
-<p class="text-lg text-gray-700 mb-6">Pippa developed a joy of working with people and a strong commercial focus throughout her successful career in food manufacturing and retail. She is a product development specialist and has worked for several organisations including United Biscuits, Grand Metropolitan, Northern Foods, and Marks and Spencer.</p>
-<p class="text-lg text-gray-700 mb-6">Alongside her professional achievements, Pippa has dedicated significant time to volunteering and community engagement. She has supported Sense, the deafblind charity, and spent 10 years volunteering for Citizens Advice as a Money Advice Caseworker. In addition, she has played a key role in education governance, serving as a Governor at several schools, most recently at The Beacon, where she chaired the Admissions and Marketing Committee.</p>
-<p class="text-lg text-gray-700 mb-6">Since 2020, Pippa has been actively involved with Heart of Bucks Community Foundation, where she leads the fundraising programme and has served on the grants panel. Through this work, she has contributed to initiatives such as the Young Futures Fund, a participatory grants programme that supports the next generation in Buckinghamshire by improving the quality of life for children and young people from birth to age 30. Heart of Bucks and the Milton Keynes Community Foundation play a vital role in addressing local needs, acting as a catalyst for social change to make Buckinghamshire a better place to live, work, and thrive. Through targeted grant-making and fundraising efforts, the foundations support grassroot organisations, empowering communities to enable meaningful, long-term impact.</p>
-<p class="text-lg text-gray-700 mb-6">Pippa is passionate about the power of volunteering, which not only strengthens communities but also provides individuals with a sense of purpose, skill development, and connection. Her commitment to fostering a culture of giving back underscores her belief that volunteering can be a lifelong endeavour with profound personal and societal benefits.</p>
-<p class="text-lg text-gray-700 mb-6">In her shrieval year, Pippa will focus on two key themes in support of the overall role of the High Sheriff to promote the role and functions of the justice system:</p>
-<p class="text-lg text-gray-700">Developing opportunities for young people to ensure their best possible start in life</p>
-<p class="text-lg text-gray-700 mb-6">Volunteering for life</p>
-<p class="text-lg text-gray-700 mb-6">Pippa has been married to Nick for 35 years, and they have lived in Old Amersham for 30 years. They have two daughters, Charlie and Livvie, and are recent and very proud grandparents. Pippa is a keen walker, gardener, cook, and bridge player.</p>
+<p class="text-lg text-gray-700 mb-6">Pippa developed a joy of working with people and a strong commercial focus throughout her successful career in food manufacturing and retail. She has worked with Marks & Spencer, Nestlé, and Tesco, and has been a Non-Executive Director of Buckinghamshire Healthcare NHS Trust for the past 6 years. She is also a trustee of the Pace Centre, a charity for children with motor disorders.</p>
+<p class="text-lg text-gray-700 mb-6">Pippa has lived in Buckinghamshire for 25 years with her husband Richard and their three children. She is an active member of her local church and community in Haddenham.</p>
+<p class="text-lg text-gray-700 mb-6">During her year as High Sheriff, Pippa's theme is "Let Us Work Together to Lift Up Our Young People and Let Us Celebrate the Power Of Volunteering". She is focusing on supporting young people and celebrating the power of volunteering across Buckinghamshire.</p>
+<p class="text-lg text-gray-700 mb-6">Pippa is working closely with the Lord-Lieutenant and his Deputy Lieutenants, the police, fire and rescue services, the NHS, local government, the judiciary, and the voluntary sector. She is particularly interested in supporting organizations that help young people develop life skills and confidence.</p>
+<p class="text-lg text-gray-700">Pippa is available to attend events across Buckinghamshire. If you would like to invite her to an event, please use the <a href="https://forms.office.com/e/PCiShEMDKw" class="text-primary hover:text-secondary underline">contact form</a> provided.</p>
 </div>
 </div>
 </div>
@@ -189,7 +211,7 @@ John's personal interests include running, debating, and ice hockey, and he is p
 <section id="multi-faith" class="py-20 bg-white">
 <div class="container mx-auto px-4">
 <h2 class="text-3xl font-bold text-primary mb-12">High Sheriff's Chaplain</h2>
-<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="flex flex-col md:flex-row gap-12 items-start mb-20">
 <div class="md:w-1/3">
 <img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/192f1f503a0f9975c61314296f92d762.jpeg" alt="Revd Jonny Rapson" class="w-full h-auto rounded-lg shadow-xl object-cover">
 </div>
@@ -201,11 +223,43 @@ John's personal interests include running, debating, and ice hockey, and he is p
 <p class="text-lg text-gray-700">Jonny is married to his wife Jenna and they have a one year old daughter, Naomi. They are especially looking forward to the arrival of baby number two in August.</p>
 </div>
 </div>
+<div id="cadet">
+<h2 class="text-3xl font-bold text-primary mb-12">High Sheriff's Cadet</h2>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/6112eba9d21284b29fc9239ea2af8742.jpeg" alt="Molly Dixon" class="w-full h-auto rounded-lg shadow-xl object-cover">
+</div>
+<div class="w-full">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Molly Dixon</h3>
+<p class="text-lg text-gray-700 mb-6">This year, our High Sheriff Cadet is Molly Dixon, who has been a dedicated cadet for the past three years since joining at the age of 13. Molly has made an exceptional contribution, earning the title of Cadet of the Year from Thames Valley Police and serving as the Mayor's Cadet in Beaconsfield last year.</p>
+<p class="text-lg text-gray-700 mb-6">Her journey highlights the positive, lasting impact that the VPC scheme can have on a young person's development and civic engagement.</p>
+<a href="#" class="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white px-6 py-3 !rounded-button font-medium transition-all whitespace-nowrap">
+Find out about Volunteer Police Cadets
+<i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
 </div>
 </section>
 <!-- Nomination Panel Section -->
 <section id="nomination-panel" class="py-20 bg-gray-50">
 <div class="container mx-auto px-4">
+<div id="spotlight" class="mb-20">
+<h2 class="text-3xl font-bold text-primary mb-12">Spotlight on Volunteering</h2>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/83a28b34ddcf52c2b4acffdc1ddab627.jpeg" alt="Chris Hall" class="w-[320px] h-auto rounded-lg shadow-xl object-cover">
+</div>
+<div class="w-full">
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Chris Hall, Photographer</h3>
+<p class="text-lg text-gray-700 mb-6">As part of her mission, Pippa is collaborating with Christopher James Hall, founder of Narrator's Lens CIC, to bring the stories of volunteers to life. Christopher's photography is more than just an art form—it is a tool for storytelling, a means to amplify voices, and a way to capture the resilience, dedication, and impact of those who give their time to help others.</p>
+<a href="https://highsheriffofbuckinghamshire.org/narrators-lens.html" class="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white px-6 py-3 !rounded-button font-medium transition-all whitespace-nowrap">
+Read more
+<i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</div>
 <h2 class="text-3xl font-bold text-primary mb-12">Nomination Panel</h2>
 <div class="flex flex-col md:flex-row gap-12">
 <div class="md:w-1/3">
@@ -296,24 +350,30 @@ John's personal interests include running, debating, and ice hockey, and he is p
 <h2 class="text-3xl font-bold text-primary mb-4">Past High Sheriffs</h2>
 <p class="text-lg text-gray-700 mb-12">Discover the distinguished individuals who have served as High Sheriff of Buckinghamshire</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<a href="https://highsheriffofbuckinghamshire.org/past-2024-25.html" data-readdy="true" class="block">
 <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
 <h4 class="text-lg font-semibold text-primary mb-2">Kurshida Mirza BEM</h4>
 <p class="text-gray-600 mb-2">2024 - 2025</p>
 <p class="text-gray-700">Focused on promoting diversity, inclusion and community cohesion across Buckinghamshire.</p>
 </div>
+</a>
+<a href="https://highsheriffofbuckinghamshire.org/past-2023-24.html" data-readdy="true" class="block">
 <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-<h4 class="text-lg font-semibold text-primary mb-2">Ann Limb DBE DL</h4>
+<h4 class="text-lg font-semibold text-primary mb-2">Dame Ann Limb DBE DL</h4>
 <p class="text-gray-600 mb-2">2023 - 2024</p>
 <p class="text-gray-700">Focused on supporting education, social mobility and environmental sustainability across the county.</p>
 </div>
+</a>
+<a href="https://highsheriffofbuckinghamshire.org/past-2022-23.html" data-readdy="true" class="block">
 <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
 <h4 class="text-lg font-semibold text-primary mb-2">Debbie Brock DL</h4>
 <p class="text-gray-600 mb-2">2022 - 2023</p>
 <p class="text-gray-700">Championed youth engagement and community development initiatives across Buckinghamshire.</p>
 </div>
+</a>
 </div>
 <div class="flex justify-center">
-<a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/past-gallery.html" class="bg-primary hover:bg-secondary text-white px-8 py-3 !rounded-button font-medium transition-all flex items-center gap-2 whitespace-nowrap">
+<a href="https://highsheriffofbuckinghamshire.org/past-gallery.html" data-readdy="true" class="bg-primary hover:bg-secondary text-white px-8 py-3 !rounded-button font-medium transition-all flex items-center gap-2 whitespace-nowrap">
 See More Past High Sheriffs
 <i class="ri-arrow-right-line"></i>
 </a>
@@ -328,22 +388,23 @@ See More Past High Sheriffs
 <div>
 <h3 class="text-xl font-bold mb-6">Quick Links</h3>
 <ul class="space-y-3">
-<li><a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/index.html" class="hover:text-secondary transition-colors">Home</a></li>
-<li><a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/Team.html" class="hover:text-secondary transition-colors">Team</a></li>
-<li><a href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/News-Galleries.html" class="hover:text-secondary transition-colors">News</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="hover:text-secondary transition-colors">News</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/privacy-policy.html" data-readdy="true" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
 </ul>
 </div>
 <!-- Social Media -->
 <div>
 <h3 class="text-xl font-bold mb-6">Connect With Us</h3>
 <div class="flex space-x-4 mb-8">
-<a href="https://www.instagram.com/hisheriffbucks/" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
 <i class="ri-instagram-line"></i>
 </a>
-<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
 <i class="ri-linkedin-fill"></i>
 </a>
-<a href="mailto:buckinghamshire@highsheriff.com" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<a href="mailto:buckinghamshire@highsheriff.com" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
 <i class="ri-mail-line"></i>
 </a>
 </div>
@@ -355,113 +416,117 @@ See More Past High Sheriffs
 </div>
 </footer>
 <script id="mobile-menu-script">
-document.addEventListener('DOMContentLoaded', function() {
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-mobileMenuButton.addEventListener('click', function() {
-mobileMenu.classList.toggle('hidden');
-// Change icon based on menu state
-const icon = mobileMenuButton.querySelector('i');
-if (mobileMenu.classList.contains('hidden')) {
-icon.classList.remove('ri-close-line');
-icon.classList.add('ri-menu-line');
-} else {
-icon.classList.remove('ri-menu-line');
-icon.classList.add('ri-close-line');
-}
-});
-// Close mobile menu when clicking on a link
-const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-mobileMenuLinks.forEach(link => {
-link.addEventListener('click', function() {
-mobileMenu.classList.add('hidden');
-const icon = mobileMenuButton.querySelector('i');
-icon.classList.remove('ri-close-line');
-icon.classList.add('ri-menu-line');
-});
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  mobileMenuButton.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+    // Change icon based on menu state
+    const icon = mobileMenuButton.querySelector("i");
+    if (mobileMenu.classList.contains("hidden")) {
+      icon.classList.remove("ri-close-line");
+      icon.classList.add("ri-menu-line");
+    } else {
+      icon.classList.remove("ri-menu-line");
+      icon.classList.add("ri-close-line");
+    }
+  });
+  // Close mobile menu when clicking on a link
+  const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      mobileMenu.classList.add("hidden");
+      const icon = mobileMenuButton.querySelector("i");
+      icon.classList.remove("ri-close-line");
+      icon.classList.add("ri-menu-line");
+    });
+  });
 });
 </script>
 <script id="team-navigation-script">
-document.addEventListener('DOMContentLoaded', function() {
-const navButtons = document.querySelectorAll('.team-nav-button');
-// Add click event to each button
-navButtons.forEach(button => {
-button.addEventListener('click', function() {
-const targetSection = this.dataset.target;
-const section = document.getElementById(targetSection);
-if (section) {
-const headerOffset = 140;
-const elementPosition = section.getBoundingClientRect().top;
-const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-window.scrollTo({
-top: offsetPosition,
-behavior: 'smooth'
-});
-// Update active button state
-navButtons.forEach(btn => {
-if (btn.dataset.target === targetSection) {
-btn.classList.add('active');
-btn.style.backgroundColor = '#c9a84a';
-} else {
-btn.classList.remove('active');
-btn.style.backgroundColor = '#47467f';
-}
-});
-}
-});
-});
-// Handle direct links to sections
-const hash = window.location.hash.substring(1);
-if (hash && document.getElementById(hash)) {
-const targetButton = document.querySelector(`.team-nav-button[data-target="${hash}"]`);
-if (targetButton) {
-targetButton.click();
-}
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const navButtons = document.querySelectorAll(".team-nav-button");
+  // Add click event to each button
+  navButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const targetSection = this.dataset.target;
+      const section = document.getElementById(targetSection);
+      if (section) {
+        const headerOffset = 140;
+        const elementPosition = section.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+        // Update active button state
+        navButtons.forEach((btn) => {
+          if (btn.dataset.target === targetSection) {
+            btn.classList.add("active");
+            btn.style.backgroundColor = "#c9a84a";
+          } else {
+            btn.classList.remove("active");
+            btn.style.backgroundColor = "#47467f";
+          }
+        });
+      }
+    });
+  });
+  // Handle direct links to sections
+  const hash = window.location.hash.substring(1);
+  if (hash && document.getElementById(hash)) {
+    const targetButton = document.querySelector(
+      `.team-nav-button[data-target="${hash}"]`,
+    );
+    if (targetButton) {
+      targetButton.click();
+    }
+  }
 });
 </script>
 <script id="scroll-animation-script">
-document.addEventListener('DOMContentLoaded', function() {
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function(e) {
-e.preventDefault();
-const targetId = this.getAttribute('href');
-if (targetId === '#') return;
-const targetElement = document.querySelector(targetId);
-if (targetElement) {
-const headerOffset = 140; // Height of fixed header + nav
-const elementPosition = targetElement.getBoundingClientRect().top;
-const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-window.scrollTo({
-top: offsetPosition,
-behavior: 'smooth'
-});
-// If it's a team section, activate the corresponding button
-if (targetElement.classList.contains('team-section')) {
-const sectionId = targetElement.id;
-const navButtons = document.querySelectorAll('.team-nav-button');
-navButtons.forEach(button => {
-if (button.dataset.target === sectionId) {
-button.classList.add('active');
-} else {
-button.classList.remove('active');
-}
-});
-// Show the section and hide others
-const teamSections = document.querySelectorAll('.team-section');
-teamSections.forEach(section => {
-if (section.id === sectionId) {
-section.classList.remove('hidden');
-} else {
-section.classList.add('hidden');
-}
-});
-}
-}
-});
-});
+document.addEventListener("DOMContentLoaded", function () {
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      if (targetId === "#") return;
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        const headerOffset = 140; // Height of fixed header + nav
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+        // If it's a team section, activate the corresponding button
+        if (targetElement.classList.contains("team-section")) {
+          const sectionId = targetElement.id;
+          const navButtons = document.querySelectorAll(".team-nav-button");
+          navButtons.forEach((button) => {
+            if (button.dataset.target === sectionId) {
+              button.classList.add("active");
+            } else {
+              button.classList.remove("active");
+            }
+          });
+          // Show the section and hide others
+          const teamSections = document.querySelectorAll(".team-section");
+          teamSections.forEach((section) => {
+            if (section.id === sectionId) {
+              section.classList.remove("hidden");
+            } else {
+              section.classList.add("hidden");
+            }
+          });
+        }
+      }
+    });
+  });
 });
 </script>
 </body>
