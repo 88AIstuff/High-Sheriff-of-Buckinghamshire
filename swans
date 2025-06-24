@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wycombe Swans - High Sheriff of Buckinghamshire</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#343465", secondary: "#c9a84a" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Open Sans', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+      font-family: 'Open Sans', sans-serif;
+      }
+      .nav-link {
+      position: relative;
+      }
+      .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #0c3b6e;
+      transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+      width: 100%;
+      }
+      .active-nav::after {
+      width: 100%;
+      }
+      .music-note {
+      animation: float 6s ease-in-out infinite;
+      }
+      @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <a
+            href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/index.html"
+          >
+            <img
+              src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png"
+              alt="High Sheriff Crest"
+              class="w-16 h-auto"
+            />
+          </a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a
+            href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/index.html"
+            class="nav-link text-gray-700 hover:text-primary font-medium"
+            >Home</a
+          >
+          <a
+            href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/team.html"
+            class="nav-link text-gray-700 hover:text-primary font-medium"
+            >Team</a
+          >
+          <a
+            href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/news.html"
+            class="nav-link active-nav text-primary font-medium"
+            >News</a
+          >
+        </nav>
+        <div class="md:hidden w-10 h-10 flex items-center justify-center">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-700 hover:text-primary"
+          >
+            <i class="ri-menu-line ri-2x"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-lg absolute w-full"
+      >
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+          <a
+            href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/index.html"
+            class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100"
+            >Home</a
+          >
+          <a
+            href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/team.html"
+            class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100"
+            >Team</a
+          >
+          <a
+            href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/news.html"
+            class="text-primary font-medium py-2"
+            >News</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Article Content -->
+    <section class="pt-28 pb-16">
+      <div class="container mx-auto px-4">
+        <!-- Article Header -->
+        <div class="mb-8">
+          <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+            Wycombe Swans
+          </h1>
+          <div class="flex items-center text-gray-500 mb-6">
+            <span class="flex items-center mr-4">
+              <i class="ri-calendar-line mr-2"></i>
+              <span>28 May 2025</span>
+            </span>
+            <span class="flex items-center">
+              <i class="ri-user-line mr-2"></i>
+              <span>High Sheriff of Buckinghamshire</span>
+            </span>
+          </div>
+        </div>
+        <!-- Featured Image -->
+        <div class="mb-10 rounded-lg overflow-hidden shadow-lg">
+          <img
+            src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5945f88056f0fe0855e22b3bc41c2d0b.jpeg"
+            alt="Wycombe Swans Listen Up and Listen in Concert participants"
+            class="w-full h-auto object-cover"
+          />
+          <div class="bg-gray-50 py-3 px-4 text-sm text-gray-600 italic">
+            Listen Up and Listen in Concert participants at the Wycombe Swan
+            Theatre, wearing their distinctive pink t-shirts with musical note
+            designs.
+          </div>
+        </div>
+        <!-- Article Content -->
+        <div class="max-w-3xl mx-auto">
+          <div class="prose prose-lg">
+            <p class="text-gray-700 text-lg leading-relaxed mb-6">
+              Last week I had the joy of seeing hundreds of bubbling, happy
+              young people at the Wycombe Swan after a Chiltern Arts Listen Up
+              and Listen in Concert, whose objective is inspiring a new
+              generation of audiences.
+            </p>
+            <div
+              class="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
+            >
+              <p class="text-gray-700 italic">
+                "Singing and music is great for health as well as general
+                wellbeing. A great event to support High Sheriff."
+              </p>
+            </div>
+            <p class="text-gray-700 text-lg leading-relaxed mb-6">
+              Congratulations to Naomi Taylor and David Lillycrop for a
+              brilliant event. The enthusiasm and talent displayed by all
+              participants was truly remarkable, showcasing the power of music
+              to bring communities together.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
+              <div
+                class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"
+              >
+                <div
+                  class="w-16 h-16 flex items-center justify-center text-pink-500 mb-4 music-note"
+                >
+                  <i class="ri-music-2-line ri-3x"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-2">
+                  Inspiring People
+                </h3>
+                <p class="text-gray-600"></p>
+              </div>
+              <div
+                class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"
+              >
+                <div
+                  class="w-16 h-16 flex items-center justify-center text-pink-500 mb-4 music-note"
+                >
+                  <i class="ri-heart-pulse-line ri-3x"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-2">
+                  Health Benefits
+                </h3>
+                <p class="text-gray-600"></p>
+              </div>
+              <div
+                class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"
+              >
+                <div
+                  class="w-16 h-16 flex items-center justify-center text-pink-500 mb-4 music-note"
+                >
+                  <i class="ri-community-line ri-3x"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-2">
+                  Community Spirit
+                </h3>
+                <p class="text-gray-600"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Back to News -->
+        <!-- Back to News -->
+        <div class="text-center mt-8">
+          <a
+            href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/news.html"
+            class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+          >
+            <i class="ri-arrow-left-line mr-2"></i> Back to News
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/index.html"
+                  class="hover:text-secondary transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/team.html"
+                  class="hover:text-secondary transition-colors"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://88aistuff.github.io/High-Sheriff-of-Buckinghamshire/news.html"
+                  class="hover:text-secondary transition-colors"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition-colors"></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+            <div class="flex space-x-4 mb-8">
+              <a
+                href="https://www.instagram.com/hisheriffbucks/"
+                class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/"
+                class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a
+                href="mailto:buckinghamshire@highsheriff.com"
+                class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors"
+              >
+                <i class="ri-mail-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/20 pt-8 text-center text-sm">
+          <p>
+            &copy; 2025 Office of the High Sheriff of Buckinghamshire. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script id="mobile-menu-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+          // Change icon based on menu state
+          const icon = mobileMenuButton.querySelector("i");
+          if (mobileMenu.classList.contains("hidden")) {
+            icon.classList.remove("ri-close-line");
+            icon.classList.add("ri-menu-line");
+          } else {
+            icon.classList.remove("ri-menu-line");
+            icon.classList.add("ri-close-line");
+          }
+        });
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        mobileMenuLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+            const icon = mobileMenuButton.querySelector("i");
+            icon.classList.remove("ri-close-line");
+            icon.classList.add("ri-menu-line");
+          });
+        });
+      });
+    </script>
+    <script id="social-share-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const shareButtons = document.querySelectorAll(".social-icon");
+        shareButtons.forEach((button) => {
+          button.addEventListener("mouseenter", function () {
+            if (this.classList.contains("social-icon")) {
+              this.classList.add("bg-secondary");
+              this.classList.add("text-white");
+              this.classList.remove("bg-white");
+              this.classList.remove("text-primary");
+            }
+          });
+          button.addEventListener("mouseleave", function () {
+            if (this.classList.contains("social-icon")) {
+              this.classList.remove("bg-secondary");
+              this.classList.remove("text-white");
+              this.classList.add("bg-white");
+              this.classList.add("text-primary");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
