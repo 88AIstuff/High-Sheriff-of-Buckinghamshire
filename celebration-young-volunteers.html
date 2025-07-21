@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woodrow High House Fun Day - High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#343465',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #0c3b6e;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.blog-content h2 {
+font-size: 1.875rem;
+font-weight: 700;
+color: #343465;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+.blog-content h3 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #343465;
+margin-top: 1.5rem;
+margin-bottom: 0.75rem;
+}
+.blog-content p {
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.blog-content ul, .blog-content ol {
+margin-bottom: 1.5rem;
+padding-left: 1.5rem;
+}
+.blog-content ul {
+list-style-type: disc;
+}
+.blog-content ol {
+list-style-type: decimal;
+}
+.blog-content li {
+margin-bottom: 0.5rem;
+}
+.blog-content blockquote {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+font-style: italic;
+margin: 1.5rem 0;
+color: #4b5563;
+}
+.blog-content img {
+border-radius: 8px;
+margin: 2rem 0;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.blog-content .image-caption {
+text-align: center;
+font-size: 0.875rem;
+color: #6b7280;
+margin-top: -1.5rem;
+margin-bottom: 2rem;
+}
+.blog-content .callout {
+background-color: #f8f9fa;
+border-left: 4px solid #343465;
+padding: 1.5rem;
+margin: 1.5rem 0;
+border-radius: 8px;
+}
+.theme-section {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+margin: 2rem 0;
+}
+.back-to-top {
+position: fixed;
+bottom: 2rem;
+right: 2rem;
+background-color: #343465;
+color: white;
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.3s ease;
+z-index: 40;
+}
+.back-to-top.visible {
+opacity: 1;
+}
+.image-gallery {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-gap: 16px;
+margin: 2rem 0;
+}
+.gallery-item {
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+transform: translateY(-5px);
+}
+.gallery-item.featured {
+grid-column: span 8;
+grid-row: span 2;
+}
+.gallery-item.secondary {
+grid-column: span 4;
+}
+.gallery-item.small {
+grid-column: span 4;
+}
+@media (max-width: 768px) {
+.image-gallery {
+grid-template-columns: 1fr;
+}
+.gallery-item.featured,
+.gallery-item.secondary,
+.gallery-item.small {
+grid-column: span 1;
+}
+}
+@media print {
+header, footer, .back-to-top {
+display: none;
+}
+.blog-content {
+font-size: 12pt;
+}
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="nav-link active-nav text-primary font-medium">News</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="text-primary font-medium py-2">News</a>
+</div>
+</div>
+</header>
+<!-- Blog Hero Banner -->
+<section class="w-full h-[500px] flex items-center justify-center text-white mt-16 relative">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"></div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/f68c83fdba53a7e3844a3d34ab03e97b.jfif" alt="High Sheriff Fun Day" class="absolute inset-0 w-full h-full object-cover object-top">
+<div class="container mx-auto px-4 text-center relative z-20 mt-[290px]">
+<div class="inline-block bg-[#daab36]/90 px-4 py-2 rounded-sm mb-4">
+<span class="text-white font-medium">21 July 2025</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">A Celebration of Young Volunteers in Buckinghamshire</h1>
+</div>
+</section>
+<!-- Blog Content -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<!-- Author Info -->
+<div class="mb-12 border-b border-gray-200 pb-8">
+<div class="flex items-center">
+<div class="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/90385f6abe09f20a7e7bdd19746d4eb2.jpeg" alt="Pippa Kirkbride" class="w-full h-full object-cover">
+</div>
+<div class="ml-4">
+<p class="font-medium text-gray-900">Pippa Kirkbride</p>
+<p class="text-sm text-gray-500">High Sheriff of Buckinghamshire</p>
+</div>
+</div>
+</div>
+<!-- Blog Content -->
+<div class="blog-content">
+<p class="text-xl leading-relaxed mb-8">On 27 June, Heart of Bucks Community Foundation along with Pippa Kirkbride - the High Sheriff of Buckinghamshire - hosted a festival for the county’s young volunteers. The event, to recognise and celebrate young people who give their time, energy, skills and passion to help their local community, was held at Penn House with the kind permission of Lord and Countess Howe. The event was attended by more than 100 volunteers aged between 16 and 30 from a range of charities across the county.</p>
+<p class="text-lg leading-relaxed mb-6">The beautiful, warm evening began with live music from Wycombe Steel Orchestra, followed by a circus performance from Katy Kartwheel and some good old-fashioned lawn games. Food was provided by local suppliers Bombayish, Oliviero’s Pizza and The Works Ice Cream. There was also a photobooth from The Rare Mare – a company founded by one of Heart of Bucks’ own young volunteers Tiyanna Noel. Additionally, Tiyanna received a bursary for the business from SWEF through the Heart of Bucks Young Futures Fund, making it extra special to have her at the event. The perfect showcase for Young Futures and how it can help young people in Buckinghamshire create lasting change for themselves and others.</p>
+<div class="image-gallery">
+<div class="gallery-item featured">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/d6d0009154dbb7184cb7796cf74871d4.jfif" alt="Woodrow High House Team" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item secondary">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/49fec6643c159d4ce509e9e75c9f692e.jfif" alt="Welcome Sign" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item small">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/04d8c8f5e57aaaf255b8c3801feaae79.jfif" alt="Outdoor Group" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item" style="grid-column: span 6;">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/7ef81270c65ee3c5247461a2b51b04a3.jfif" alt="Activity Grounds" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item" style="grid-column: span 6;">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/6fc334d6000a141078bb02c98f3150fb.jfif" alt="Climbing Wall Activity" class="w-full h-full object-cover">
+</div>
+</div>
+<p class="text-lg leading-relaxed mb-6">The evening concluded with marshmallows toasted on a firepit loaned from Odds Farm and a DJ set which got everyone up and dancing.</p>
+<div class="callout my-8">
+<h4 class="font-semibold text-primary mb-2">Henry Allmand, CEO of Heart of Bucks said:</h4>
+<p>"Our Young Futures Fund is all is about empowering young people to help make Buckinghamshire a better place for the youth of today and the future.  It was fantastic to be able to honour more than 100 volunteers from across our county at this brilliant event.” </p>
+</div>
+<p class="text-lg leading-relaxed mb-8">The event was kindly hosted by Lord and Countess Howe and Pippa Kirkbride, the current High Sheriff of Buckinghamshire. The evening was sponsored by local businesses Framework Digital and Rebellion Brewery.</p>
+<div class="callout my-8">
+<h4 class="font-semibold text-primary mb-2">A young volunteer said:</h4>
+<p>“The event was so fun…I loved the entertainment…the food was great…and everyone felt included. I feel really touched that this event was put on to celebrate the efforts of all the young volunteers in Buckinghamshire.”</p>
+</div>
+</div>
+<p class="text-lg leading-relaxed mb-6">The evening was just full of fun, connection and inspiration, celebrating just some of the amazing young people who we are lucky enough to have living in our county.</p>
+<div class="callout my-8 bg-gray-50 border-l-4 border-primary pl-5 pt-5 pb-[60px] rounded-lg">
+<h4 class="font-semibold text-primary mb-2">Pippa Kirkbride, High Sheriff of Buckinghamshire commented:</h4>
+<p class="text-gray-700">"I am constantly amazed by the dedication and enthusiasm of our young volunteers. Their commitment to making Buckinghamshire a better place is truly inspiring. Events like this are essential to recognize their invaluable contribution and encourage more young people to get involved in community service."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="hover:text-secondary transition-colors">News</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+<div class="mt-6">
+<h4 class="font-semibold mb-3"></h4>
+<a href="https://www.highsheriffofbuckinghamshire.com/" target="_blank" class="flex items-center text-white hover:text-secondary transition-colors">
+<span></span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+<i class="ri-arrow-up-line"></i>
+</button>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="image-lightbox-script">
+document.addEventListener('DOMContentLoaded', function() {
+const blogImages = document.querySelectorAll('.blog-content img, .gallery-item img');
+blogImages.forEach(image => {
+image.style.cursor = 'pointer';
+image.addEventListener('click', function() {
+const lightbox = document.createElement('div');
+lightbox.classList.add('fixed', 'inset-0', 'bg-black/90', 'flex', 'items-center', 'justify-center', 'z-50', 'p-4');
+const lightboxImg = document.createElement('img');
+lightboxImg.src = this.src;
+lightboxImg.classList.add('max-w-full', 'max-h-full', 'object-contain');
+const closeBtn = document.createElement('button');
+closeBtn.classList.add('absolute', 'top-4', 'right-4', 'text-white', 'text-4xl');
+closeBtn.innerHTML = '&times;';
+closeBtn.addEventListener('click', function() {
+document.body.removeChild(lightbox);
+});
+lightbox.appendChild(lightboxImg);
+lightbox.appendChild(closeBtn);
+lightbox.addEventListener('click', function(e) {
+if (e.target === lightbox) {
+document.body.removeChild(lightbox);
+}
+});
+document.body.appendChild(lightbox);
+});
+});
+});
+</script>
+<script id="back-to-top-script">
+document.addEventListener('DOMContentLoaded', function() {
+const backToTopButton = document.getElementById('back-to-top');
+window.addEventListener('scroll', function() {
+if (window.pageYOffset > 300) {
+backToTopButton.classList.add('visible');
+} else {
+backToTopButton.classList.remove('visible');
+}
+});
+backToTopButton.addEventListener('click', function() {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+});
+</script>
+</body>
+</html>
