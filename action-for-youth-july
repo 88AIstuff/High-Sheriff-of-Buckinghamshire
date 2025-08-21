@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Action for Youth July- High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#343465',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #0c3b6e;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.blog-content h2 {
+font-size: 1.875rem;
+font-weight: 700;
+color: #343465;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+.blog-content h3 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #343465;
+margin-top: 1.5rem;
+margin-bottom: 0.75rem;
+}
+.blog-content p {
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.blog-content ul, .blog-content ol {
+margin-bottom: 1.5rem;
+padding-left: 1.5rem;
+}
+.blog-content ul {
+list-style-type: disc;
+}
+.blog-content ol {
+list-style-type: decimal;
+}
+.blog-content li {
+margin-bottom: 0.5rem;
+}
+.blog-content blockquote {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+font-style: italic;
+margin: 1.5rem 0;
+color: #4b5563;
+}
+.blog-content img {
+border-radius: 8px;
+margin: 2rem 0;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.blog-content .image-caption {
+text-align: center;
+font-size: 0.875rem;
+color: #6b7280;
+margin-top: -1.5rem;
+margin-bottom: 2rem;
+}
+.blog-content .callout {
+background-color: #f8f9fa;
+border-left: 4px solid #343465;
+padding: 1.5rem;
+margin: 1.5rem 0;
+border-radius: 8px;
+}
+.theme-section {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+margin: 2rem 0;
+}
+.back-to-top {
+position: fixed;
+bottom: 2rem;
+right: 2rem;
+background-color: #343465;
+color: white;
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.3s ease;
+z-index: 40;
+}
+.back-to-top.visible {
+opacity: 1;
+}
+.image-gallery {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-gap: 16px;
+margin: 0;
+}
+.gallery-item {
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+transform: translateY(-5px);
+}
+.gallery-item.featured {
+grid-column: span 8;
+grid-row: span 2;
+}
+.gallery-item.secondary {
+grid-column: span 4;
+}
+.gallery-item.small {
+grid-column: span 4;
+}
+@media (max-width: 768px) {
+.image-gallery {
+grid-template-columns: 1fr;
+}
+.gallery-item.featured,
+.gallery-item.secondary,
+.gallery-item.small {
+grid-column: span 1;
+}
+}
+@media print {
+header, footer, .back-to-top {
+display: none;
+}
+.blog-content {
+font-size: 12pt;
+}
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://readdy.ai/home/2eda6b78-f831-49b3-9664-c01efe8a8793/2ea3f249-b7d8-484f-9819-81325ec3b2d1" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="nav-link active-nav text-primary font-medium">News</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="text-primary font-medium py-2">News</a>
+</div>
+</div>
+</header>
+<!-- Blog Hero Banner -->
+<section class="w-full h-[500px] flex items-center justify-center text-white mt-16 relative">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10" style="clip-path: inset(0 0 20px 0);"></div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/5115d04cb779336bbd7df9650bfe6ef4.jfif" alt="High Sheriff Fun Day" class="absolute inset-0 w-full h-full object-cover" style="object-position: center 20px; clip-path: inset(0 0 20px 0);">
+<div class="container mx-auto px-4 text-center relative z-20 mt-[290px]">
+<div class="inline-block bg-[#daab36]/90 px-4 py-2 rounded-sm mb-4">
+<span class="text-white font-medium">20 August 2025</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">A Great Day with Action 4 Youth</h1>
+</div>
+</section>
+<!-- Blog Content -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<!-- Author Info -->
+<div class="mb-8 border-b border-gray-200 pb-4">
+<div class="flex items-center">
+<div class="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/90385f6abe09f20a7e7bdd19746d4eb2.jpeg" alt="Pippa Kirkbride" class="w-full h-full object-cover">
+</div>
+<div class="ml-4">
+<p class="font-medium text-gray-900">Pippa Kirkbride</p>
+<p class="text-sm text-gray-500">High Sheriff of Buckinghamshire</p>
+</div>
+</div>
+</div>
+<!-- Blog Content -->
+<div class="blog-content">
+<p class="text-xl leading-relaxed mb-8">At the end of July, Nick and I joined a group of young people with learning difficulties and their parents, families and carers at the Caldecotte Xperience.
+We enjoyed a fantastic day with them as they had a go at Archery, Zorbing, Canoeing and Speed Boating under the excellent leadership of the Action 4 Youth team.</p>
+<p class="text-xl leading-relaxed mb-8">It was a day full of smiles, joy and kindness and lasting memories for them (and me).</p>
+<div class="image-gallery" style="margin: 0;">
+<div class="gallery-item featured">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/8ca8d418b65cb567218c6bcbe9f6d91e.jfif" alt="Woodrow High House Team" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item secondary">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/1272ec3b69a4d0c83459a65ba0aac924.jfif" alt="Welcome Sign" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item small">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/fdeb413415b053899a8ac84fe633e517.jfif" alt="Outdoor Group" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item" style="grid-column: span 6;">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/6c1a62396625fbe32b31219b85bac225.jfif" alt="Activity Grounds" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item" style="grid-column: span 6;">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/d6dc276cf9ceeaccb3f2bee475407fa5.jfif" alt="Climbing Wall Activity" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item featured">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/ab96aef1595f1ceef12823d6156d338a.jfif" alt="Outdoor Activities" class="w-full h-full object-cover object-center">
+</div>
+<div class="gallery-item secondary">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/2dd8ca948ec2b3305e0fa28e4da8eced.jfif" alt="Zorbing Fun" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item small">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/a92c8dbdb40432478c0f3f23e83ad1ea.jfif" alt="Canoeing Experience" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item" style="grid-column: span 6;">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/6effe64729144c7509116d62c7765dce.jfif" alt="Speed Boating Adventure" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item" style="grid-column: span 6;">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/27746a93763292de10dd3c6f42f62e71.jfif" alt="Group Photo" class="w-full h-full object-cover">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/ffae28894970362489bc8a782420256c.jfif" alt="Activity Session" class="w-full h-[300px] object-cover">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/f0b562e6bbf34774361847b820727176.jfif" alt="Team Building" class="w-full h-[300px] object-cover">
+</div>
+<div class="grid grid-cols-12 gap-8 mb-12">
+<div class="col-span-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/ee306c82ad64f0ba478395d89b99f0ca.jfif" alt="Water Activities" class="w-full h-[500px] object-cover" style="cursor: pointer;">
+</div>
+<div class="col-span-4 grid grid-rows-2" style="grid-gap: 0;">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/7dcfb3d73b2a1994a7e14db8c2180e95.jfif" alt="Action 4 Youth Sign" class="w-full h-[220px] object-contain shadow-none" style="cursor: pointer; margin: 0; padding: 0;">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/1fa05ad73e2e06322c1a70c5c39f443f.jfif" alt="Canoeing Activity" class="w-full h-[240px] object-cover" style="cursor: pointer; margin: 0; padding: 0;">
+</div>
+</div>
+<p class="text-lg leading-relaxed mb-6"></p>
+<p class="text-lg leading-relaxed mb-8"></p>
+</div>
+<p class="text-lg leading-relaxed mb-6"></p>
+</div>
+</div>
+<div class="max-w-4xl mx-auto -mt-12">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/b23d74e404a04f8eac585272b5293aa5.jfif" alt="High Sheriff Fun Day Closing" class="w-full h-[500px] object-cover rounded-lg">
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="hover:text-secondary transition-colors">News</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+<div class="mt-6">
+<h4 class="font-semibold mb-3"></h4>
+<a href="https://www.highsheriffofbuckinghamshire.com/" target="_blank" class="flex items-center text-white hover:text-secondary transition-colors">
+<span></span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+<i class="ri-arrow-up-line"></i>
+</button>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="image-lightbox-script">
+document.addEventListener('DOMContentLoaded', function() {
+const blogImages = document.querySelectorAll('.blog-content img, .gallery-item img');
+blogImages.forEach(image => {
+image.style.cursor = 'pointer';
+image.addEventListener('click', function() {
+const lightbox = document.createElement('div');
+lightbox.classList.add('fixed', 'inset-0', 'bg-black/90', 'flex', 'items-center', 'justify-center', 'z-50', 'p-4');
+const lightboxImg = document.createElement('img');
+lightboxImg.src = this.src;
+lightboxImg.classList.add('max-w-full', 'max-h-full', 'object-contain');
+const closeBtn = document.createElement('button');
+closeBtn.classList.add('absolute', 'top-4', 'right-4', 'text-white', 'text-4xl');
+closeBtn.innerHTML = '&times;';
+closeBtn.addEventListener('click', function() {
+document.body.removeChild(lightbox);
+});
+lightbox.appendChild(lightboxImg);
+lightbox.appendChild(closeBtn);
+lightbox.addEventListener('click', function(e) {
+if (e.target === lightbox) {
+document.body.removeChild(lightbox);
+}
+});
+document.body.appendChild(lightbox);
+});
+});
+});
+</script>
+<script id="back-to-top-script">
+document.addEventListener('DOMContentLoaded', function() {
+const backToTopButton = document.getElementById('back-to-top');
+window.addEventListener('scroll', function() {
+if (window.pageYOffset > 300) {
+backToTopButton.classList.add('visible');
+} else {
+backToTopButton.classList.remove('visible');
+}
+});
+backToTopButton.addEventListener('click', function() {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+});
+</script>
+</body>
+</html>
