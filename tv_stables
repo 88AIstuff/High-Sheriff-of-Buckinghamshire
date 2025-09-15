@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woodrow High House Fun Day - High Sheriff of Buckinghamshire</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#343465',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #0c3b6e;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+.blog-content h2 {
+font-size: 1.875rem;
+font-weight: 700;
+color: #343465;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+.blog-content h3 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #343465;
+margin-top: 1.5rem;
+margin-bottom: 0.75rem;
+}
+.blog-content p {
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+.blog-content ul, .blog-content ol {
+margin-bottom: 1.5rem;
+padding-left: 1.5rem;
+}
+.blog-content ul {
+list-style-type: disc;
+}
+.blog-content ol {
+list-style-type: decimal;
+}
+.blog-content li {
+margin-bottom: 0.5rem;
+}
+.blog-content blockquote {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+font-style: italic;
+margin: 1.5rem 0;
+color: #4b5563;
+}
+.blog-content img {
+border-radius: 8px;
+margin: 2rem 0;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.blog-content .image-caption {
+text-align: center;
+font-size: 0.875rem;
+color: #6b7280;
+margin-top: -1.5rem;
+margin-bottom: 2rem;
+}
+.blog-content .callout {
+background-color: #f8f9fa;
+border-left: 4px solid #343465;
+padding: 1.5rem;
+margin: 1.5rem 0;
+border-radius: 8px;
+}
+.theme-section {
+border-left: 4px solid #c9a84a;
+padding-left: 1.5rem;
+margin: 2rem 0;
+}
+.back-to-top {
+position: fixed;
+bottom: 2rem;
+right: 2rem;
+background-color: #343465;
+color: white;
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.3s ease;
+z-index: 40;
+}
+.back-to-top.visible {
+opacity: 1;
+}
+.image-gallery {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-gap: 16px;
+margin: 0;
+}
+.gallery-item {
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+transform: translateY(-5px);
+}
+.gallery-item.featured {
+grid-column: span 8;
+grid-row: span 2;
+}
+.gallery-item.secondary {
+grid-column: span 4;
+}
+.gallery-item.small {
+grid-column: span 4;
+}
+@media (max-width: 768px) {
+.image-gallery {
+grid-template-columns: 1fr;
+}
+.gallery-item.featured,
+.gallery-item.secondary,
+.gallery-item.small {
+grid-column: span 1;
+}
+}
+@media print {
+header, footer, .back-to-top {
+display: none;
+}
+.blog-content {
+font-size: 12pt;
+}
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cb0408d4355d90b85f41de2cf5a378a3.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="nav-link active-nav text-primary font-medium">News</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="text-primary font-medium py-2">News</a>
+</div>
+</div>
+</header>
+<!-- Blog Hero Banner -->
+<section class="w-full h-[500px] flex items-center justify-center text-white mt-16 relative">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10" style="clip-path: inset(0 0 20px 0);"></div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/b602055711dc5ab95228b1dbc4e4d1ac.jfif" alt="High Sheriff Fun Day" class="absolute inset-0 w-full h-full object-cover" style="object-position: center 20px; clip-path: inset(0 0 20px 0);">
+<div class="container mx-auto px-4 text-center relative z-20 mt-[290px]">
+<div class="inline-block bg-[#daab36]/90 px-4 py-2 rounded-sm mb-4">
+<span class="text-white font-medium">14 September 2025</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Thames Valley Mounted Police Stables</h1>
+</div>
+</section>
+<!-- Blog Content -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<!-- Author Info -->
+<div class="mb-8 border-b border-gray-200 pb-4">
+<div class="flex items-center">
+<div class="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/90385f6abe09f20a7e7bdd19746d4eb2.jpeg" alt="Pippa Kirkbride" class="w-full h-full object-cover">
+</div>
+<div class="ml-4">
+<p class="font-medium text-gray-900">Pippa Kirkbride</p>
+<p class="text-sm text-gray-500">High Sheriff of Buckinghamshire</p>
+</div>
+</div>
+</div>
+<!-- Blog Content -->
+<div class="blog-content">
+<p class="text-xl leading-relaxed mb-8">I had the chance to visit the Thames Valley Mounted Police stables last week, and it was an experience I won’t forget.</p>
+<p class="text-xl leading-relaxed mb-8">The first thing that struck me was, of course, the horses. Each one was stunning in their own right, but I’ll admit I had a soft spot for Harper. There’s something about the way he carried himself — calm, steady, yet full of quiet strength — that really stayed with me and so handsome too!</p>
+<p class="text-xl leading-relaxed mb-8 w-full">What impressed me even more was the sheer range of work the Mounted Section takes on. It’s not just ceremonial duties or patrols in Buckinghamshire. Their reach goes far wider, and the impact they have is remarkable. From crowd management at huge events like football matches and music festivals, to high-visibility patrols in town centres, their presence is both practical and reassuring. They’re also deployed to support public order operations well outside of the county, lending their skills to events and situations across the region.</p>
+<div class="image-gallery" style="margin: 0;">
+<div class="gallery-item featured">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/e5a0d158b0cf8c4daa077dfd1ee5eb82.jfif" alt="Woodrow High House Team" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item secondary">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/43fa4ad96ede72a843f3038d7add305a.jfif" alt="Welcome Sign" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item small">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/3f2918da7bf62f9c816d4cb04563bd2b.jfif" alt="Outdoor Group" class="w-full h-full object-cover">
+</div>
+</div>
+<p class="text-xl leading-relaxed my-12">Behind all of this is a dedicated team whose commitment is clear the moment you walk into the stables. Every horse is cared for with meticulous attention, and every officer speaks with pride about the work they do. It’s a demanding role, balancing the care of the horses with the responsibilities of policing, but they approach it with professionalism and passion.</p>
+<div class="image-gallery mb-5">
+<div class="gallery-item featured">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/a437091bc7e9cd4e9fe33376c544d6b5.jfif" alt="Outdoor Activities" class="w-full h-full object-cover object-center">
+</div>
+<div class="gallery-item secondary">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/6d21b4c1e04d7dd66f90d7a27c7ffff5.jfif" alt="Zorbing Fun" class="w-full h-full object-cover">
+</div>
+<div class="gallery-item small">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/c4c2c149031dc893b60fda7f7eadf4af.jfif" alt="Canoeing Experience" class="w-full h-full object-cover">
+</div>
+</div>
+<p class="text-lg leading-relaxed mb-8">I also had the pleasure of meeting Sarah who volunteers at the stables. A retired police officer herself, she knew of the mounted section, had always admired their work and took the brave step into something new volunteering at the yard as part of the next chapter of her life. It is clear that Sarah loves being part of the team but also that they benefit from her support and outside energy.</p>
+<p class="text-lg leading-relaxed mb-8">Seeing it all up close gave me a new respect not only for the horses, but for the people who work alongside them every day. The Thames Valley Mounted Police are far more than a symbolic presence — they are a hardworking, highly skilled team making a real difference, both here in The Thames Valley and well beyond.</p>
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-8">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/530fddded7e6098b03e07137b5d186b7.jfif" alt="Water Activities" class="w-full h-[500px] object-cover" style="cursor: pointer;">
+</div>
+<div class="col-span-4">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/c788acc1a07b6818cb6a9771a381aeeb.jfif" alt="Canoeing Activity" class="w-full h-[500px] object-cover" style="cursor: pointer;">
+</div>
+</div>
+<p class="text-lg leading-relaxed mb-6"></p>
+<p class="text-lg leading-relaxed mb-8"></p>
+</div>
+<p class="text-lg leading-relaxed mb-6"></p>
+</div>
+</div>
+<div class="max-w-4xl mx-auto -mt-12">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/40b0f3513dd1ecff038fe4d13ddbce13.jfif" alt="High Sheriff Fun Day Closing" class="w-full h-[500px] object-cover rounded-lg">
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="hover:text-secondary transition-colors">News</a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="mailto:buckinghamshire@highsheriff.com" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors hover:bg-secondary hover:text-white">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+<div class="mt-6">
+<h4 class="font-semibold mb-3"></h4>
+<a href="https://www.highsheriffofbuckinghamshire.com/" target="_blank" class="flex items-center text-white hover:text-secondary transition-colors">
+<span></span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+<i class="ri-arrow-up-line"></i>
+</button>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="image-lightbox-script">
+document.addEventListener('DOMContentLoaded', function() {
+const blogImages = document.querySelectorAll('.blog-content img, .gallery-item img');
+blogImages.forEach(image => {
+image.style.cursor = 'pointer';
+image.addEventListener('click', function() {
+const lightbox = document.createElement('div');
+lightbox.classList.add('fixed', 'inset-0', 'bg-black/90', 'flex', 'items-center', 'justify-center', 'z-50', 'p-4');
+const lightboxImg = document.createElement('img');
+lightboxImg.src = this.src;
+lightboxImg.classList.add('max-w-full', 'max-h-full', 'object-contain');
+const closeBtn = document.createElement('button');
+closeBtn.classList.add('absolute', 'top-4', 'right-4', 'text-white', 'text-4xl');
+closeBtn.innerHTML = '&times;';
+closeBtn.addEventListener('click', function() {
+document.body.removeChild(lightbox);
+});
+lightbox.appendChild(lightboxImg);
+lightbox.appendChild(closeBtn);
+lightbox.addEventListener('click', function(e) {
+if (e.target === lightbox) {
+document.body.removeChild(lightbox);
+}
+});
+document.body.appendChild(lightbox);
+});
+});
+});
+</script>
+<script id="back-to-top-script">
+document.addEventListener('DOMContentLoaded', function() {
+const backToTopButton = document.getElementById('back-to-top');
+window.addEventListener('scroll', function() {
+if (window.pageYOffset > 300) {
+backToTopButton.classList.add('visible');
+} else {
+backToTopButton.classList.remove('visible');
+}
+});
+backToTopButton.addEventListener('click', function() {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+});
+</script>
+</body>
+</html>
