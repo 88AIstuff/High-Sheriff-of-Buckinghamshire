@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PippaNR</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#47467f',secondary:'#c9a84a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #47467f;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-nav::after {
+width: 100%;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #47467f;
+}
+.social-icon:hover {
+background-color: #c9a84a;
+color: white;
+}
+.sheriff-card {
+transition: all 0.3s ease;
+}
+.sheriff-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header/Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/4b5a729e3b2a9087b26f92911a57fd25.png" alt="High Sheriff Crest" class="w-16 h-auto">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" class="nav-link text-gray-700 hover:text-primary font-medium">Team</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" class="nav-link text-gray-700 hover:text-primary font-medium">News</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center">
+<button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+<a href="https://highsheriffofbuckinghamshire.org/index.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+<a href="https://highsheriffofbuckinghamshire.org/team.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100">Team</a>
+<a href="#" class="text-primary font-medium py-2 border-b border-gray-100">Past High Sheriffs</a>
+<a href="https://highsheriffofbuckinghamshire.org/news.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium py-2">News</a>
+</div>
+</div>
+</header>
+<!-- Page Title Section -->
+<section class="pt-32 pb-10 bg-white">
+<div class="container mx-auto px-4">
+<h1 class="text-4xl md:text-5xl font-bold text-primary text-center">'Celebrating Buckinghamshire’s Volunteers at the “Shout Volunteering” Event</h1>
+<p class="text-2xl text-gray-700 text-center mt-4"></p>
+<div class="flex items-center mt-8 gap-4">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/02d5b3c0e779e0057d35ac426ec2e9ed.jpeg" alt="Pippa Kirkbridge" class="w-16 h-16 rounded-full object-cover shadow-lg">
+<div class="flex flex-col items-start">
+<p class="text-lg font-semibold text-primary">Pippa Kirkbride</p>
+<p class="text-gray-600">High Sheriff of Buckinghamshire</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Previous High Sheriff Feature Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-primary mb-12"></h2>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="w-full">
+<p class="text-2xl text-gray-700 mb-6">The High Sheriff of Buckinghamshire, Pippa Kirkbride, welcomed volunteers and supporters to Discover Bucks Museum on Saturday 21 February for a special event celebrating her theme for the year: Volunteering for Life. Guests were invited to explore an uplifting exhibition of stories and photographs highlighting the remarkable contribution volunteers make across the county.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Historical Context Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-primary mb-8"></h2>
+<div class="flex flex-col gap-8 items-start mb-8">
+<div class="flex flex-col md:flex-row gap-8 w-full">
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/f0bbb86b60fe5bac9f984f5b97514071.jpeg" alt="Christopher James Hall" class="w-full rounded-lg shadow-lg object-cover">
+</div>
+<p class="text-xl text-gray-700">The museum’s gallery was transformed into a living tapestry of community spirit, with each wall displaying personal accounts and portraits of volunteers. Many attendees found themselves drawn to individual stories. One volunteer, who stood proudly beside her display, spoke movingly about her journey and the meaning volunteering brings to her life. Her passion and positivity echoed the sentiment shared throughout the room: that volunteers truly are the backbone of our communities.</p>
+</div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cd78e468624b8a2badc4c90ef315858c.jpeg" alt="Volunteers viewing exhibition displays" class="w-full rounded-lg shadow-lg object-cover">
+<div class="mt-12 space-y-8">
+<div>
+<h3 class="text-2xl font-semibold text-primary mb-4"></h3>
+<p class="text-lg text-gray-700">During the event, Pippa spoke warmly about her belief in the power of volunteering and why she chose it as a focus for her shrieval year. Across her engagements this year, Pippa has consistently championed the contribution volunteers make, much like her recent visits which celebrate the vital role volunteers play in maintaining community spaces and supporting local charities. Her speech at the museum reinforced this commitment, echoing the broader commitment she has shown throughout her time in office, recognising the people who give their time to help others and strengthen local organisations.</p>
+</div>
+<div>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/191d115a81f095f6d931107e6eac13eb.jpeg" alt="Pippa Kirkbride speaking at event" class="w-full rounded-lg shadow-lg object-cover mb-4">
+<p class="text-lg text-gray-700">Christopher Hall, who collaborated with Pippa to document each volunteer’s story, also shared his reflections on the project. He spoke about the privilege of listening to so many personal accounts and the profound effect the experience has had on him. His photography, displayed throughout the gallery, brought emotion, dignity, and depth to each volunteer featured.</p>
+<p class="text-lg text-gray-700">The common link is that every role, whether large or small, makes a visible difference — and every volunteer sees that difference for themselves. As one said after a litter-picking session, “Even though I’m just a kid, I can do something that makes a big difference.”</p>
+</div>
+<div>
+<h3 class="text-3xl font-semibold text-primary mb-4"></h3>
+<p class="text-xl text-gray-700">Both speakers invited guests to imagine what Buckinghamshire would look like if volunteers stepped back for just one day, encouraging everyone to consider how deeply their efforts support daily life.</p>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/cbda72725961381de25e3b0ca3b793bb.jpeg" alt="Christopher Hall and Pippa Kirkbride at the volunteer exhibition" class="w-full rounded-lg shadow-lg object-cover mt-6">
+<h3 class="text-2xl font-semibold text-primary mb-4 mt-8"></h3>
+<p class="text-lg text-gray-700">To commemorate this body of work, a beautifully curated book of all the stories and portraits was made available to guests. This collection serves as a lasting tribute to the individuals whose generosity, dedication, compassion, and resilience, strengthens Buckinghamshire in countless ways, every day.</p>
+<img src="https://static.readdy.ai/image/9f75aeb370e3faaf4a59fdfcb3fb62ad/db41811cb286f7ef9d6a50c3abe66b2e.jpeg" alt="Shout Volunteering books display" class="w-full rounded-lg shadow-lg object-cover my-8">
+<h3 class="text-2xl font-semibold text-primary mb-4"></h3>
+<p class="text-lg text-gray-700">The “Shout Volunteering” event offered a meaningful moment of appreciation for those who donate their time and energy to support others. It also reflects Pippa’s ongoing commitment to celebrating the voluntary sector and championing the people who play a vital role in helping Buckinghamshire thrive.</p>
+<h3 class="text-2xl font-semibold text-primary mb-4 mt-8"></h3>
+<p class="text-lg text-gray-700"></p>
+<p class="text-lg text-gray-700 mt-6"></p>
+<h3 class="text-2xl font-semibold text-primary mb-4 mt-8"></h3>
+<p class="text-lg text-gray-700">See for yourself the speech Pippa delivered at a workshop arranged by Buckinghamshire Council, which evokes a strong call to action.</p>
+<p class="text-lg text-gray-700 mt-6"></p>
+<p class="text-lg text-gray-700 mt-6"></p>
+<p class="text-lg text-gray-700 mt-6"></p>
+<p class="text-lg text-gray-700 mt-6"></p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">Why We Must Shout — Strengthening the Future of Volunteering
+</h2>
+<p class="text-lg text-gray-700">Good afternoon and thank you for bringing together so many people who care deeply about the future of Buckinghamshire.
+One of the great privileges of serving as High Sheriff has been the opportunity to listen — to spend time with people across our county who quietly, generously, and consistently give their time to others. Again and again, I have been struck by a simple truth: volunteering is not an optional extra in civic life. It is part of the infrastructure that holds our communities together.
+This afternoon, I want to share three things with you: what I have seen, what concerns me, and what I believe we must now do — together.</p>
+<h2 class="text-2xl font-semibold text-primary mb-4 mt-8">The Situation — What We Know from Buckinghamshire</h2>
+<p class="text-lg text-gray-700">Across Buckinghamshire, volunteers support young people, strengthen families, sustain cultural life, assist the vulnerable, and stand alongside our justice and emergency services. Volunteering is, quite simply, a force for change — a bridge between communities and a source of personal growth.
+Through the Volunteer Voices project, photographer Christopher Hall and I have been capturing the stories of volunteers across the county. What emerges from these portraits is both humbling and instructive. Every role — whether organising a coffee morning, mentoring a young person, maintaining green spaces, or offering a listening ear — makes a visible difference. And importantly, every volunteer sees that difference for themselves.
+But when you listen carefully to volunteers — truly listen — deeper patterns emerge.
+You hear about belonging.
+You hear about purpose.
+You hear about confidence rebuilt slowly over time.
+Many describe volunteering not as charity, but as connection — a way to regain direction after illness, rediscover identity after retirement, or simply feel useful again. One volunteer put it beautifully: “It’s not just about giving — you realise you’re getting just as much in return.”
+Volunteers also rarely describe themselves as exceptional. They talk instead about routine — about “just turning up.” Week after week. In rain, cold, and busyness. That quiet consistency is precisely what sustains community life.
+Through the over eighty stories already gathered across Buckinghamshire, we see extraordinary diversity — from decades-long service to those who began only months ago. Some volunteers were once service users themselves and are now mentoring others. Some joined “just to get out of the house” and discovered friendship, skills, and renewed direction.
+These are not abstract benefits. They are lived experiences — grounded in real relationships.
+Volunteering turns isolation into connection.
+Pain into purpose.
+Struggle into strength.
+And when that happens at scale, communities do more than function — they flourish.
+And yet, because volunteering is quiet, we sometimes underestimate it.</p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">The Complication
+</h2>
+<p class="text-lg text-gray-700 mb-6">If volunteering is foundational, then we must ask a difficult question </p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">What happens if that foundation weakens?
+</h2>
+<p class="text-lg text-gray-700 mb-6">Nationally, the trend is troubling. A decade ago, around 27% of adults volunteered regularly. Today, that figure is about 17% — a significant fall, and still well below pre-pandemic levels. The reasons are familiar to many of us: busier working lives, blurred boundaries between home and work, later retirement, childcare pressures, grandparenting, and the lure of digital alternatives.
+The result is unmistakable — fewer volunteers, at precisely the moment when communities need them most.
+And there is another challenge.
+Even when people want to volunteer, too many encounter barriers: complex recruitment processes, repeated safeguarding checks, administrative burdens, and inflexible role design. Safeguards are essential — but if they become obstacles rather than protections, we risk deterring exactly the people we hope to welcome.
+Meanwhile, organisations are working hard simply to sustain what already exists, leaving little capacity to innovate.
+So let us be clear: this is not a crisis of goodwill. People still care. They still want to contribute.
+It is, increasingly, a crisis of access and adaptability.
+And to understand what that could mean in practice, let us picture for a moment a day without volunteers.
+No mentors for vulnerable young people.
+No food bank teams.
+No community transport drivers.
+No conservation groups.
+No court support.
+No befriending services.
+Many services would falter. Some would disappear entirely. Communities would feel colder, more fragmented, less hopeful.
+Volunteering is not simply helpful — it is structural.
+</p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">The Resolution — What We Must Do Next
+</h2>
+<p class="text-lg text-gray-700 mb-6">So where does this leave us?
+As leaders, policymakers, partners, and stakeholders, we face both an opportunity and a responsibility.
+No single organisation — and certainly no single High Sheriff — can solve the challenges facing volunteering. But we are uniquely placed to convene, to connect, and to catalyse change.
+I would like to suggest five areas where collective action could make a profound difference </p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">First — Make volunteering visible.</h2>
+<p class="text-lg text-gray-700 mb-6">Recognition matters. A word of thanks, a civic celebration, or simply telling someone their contribution counts can have lasting impact. Visibility elevates volunteering from “nice to have” to “essential.” 
+</p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">Second — Simplify the pathway in.</h2>
+<p class="text-lg text-gray-700 mb-6">We must ensure that volunteering opportunities themselves are visible — through clear advertising, shared platforms, and accessible local channels that make it easy for people to find ways to contribute. Let us challenge ourselves to reduce friction wherever possible. Can recruitment be clearer? Can onboarding be lighter? Can processes be proportionate rather than prohibitive?
+</p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">Third — Design for modern lives.</h2>
+<p class="text-lg text-gray-700 mb-6">The era of lifelong weekly commitments is not the only model. Flexible, episodic, skills-based volunteering — particularly for younger people — must become part of our thinking. This will likely mean embracing digital technologies and platforms to enable onboarding, scheduling and communication.
+</p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">Fourth — Engage the next generation early.</h2>
+<p class="text-lg text-gray-700 mb-6">Schools, colleges, and youth organisations are fertile ground for building a culture of service. When young people volunteer, they do not just help others — they develop confidence, empathy, and civic identity.</p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">Fifth — Strengthen cross-sector partnerships.</h2>
+<p class="text-lg text-gray-700 mb-6">Businesses, local government, charities, and community groups all have a role. Employer-supported volunteering, shared platforms, and coordinated networks can turn fragmented effort into collective strength.
+Imagine what could happen if we approached volunteering not as a series of isolated acts, but as a strategic civic asset.
+</p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">A Call to Action
+</h2>
+<p class="text-lg text-gray-700 mb-6">So this afternoon, my invitation is a simple one:
+Let us move from appreciation to intention.
+Let us treat volunteering not as background activity, but as central to the health of our county.
+Let us ask, in every strategy and every policy discussion:
+</p>
+<h2 class="text-3xl font-bold text-primary mb-4 mt-8">How does this enable people to step forward?
+</h2>
+<p class="text-lg text-gray-700 mb-6">And perhaps most importantly — let us continue to listen.
+Because when we listen properly to volunteers, we do more than hear stories.
+We learn how communities survive.
+My hope is that the work we have begun — capturing voices, sharing stories, and celebrating service — will continue well beyond my shrieval year. If it inspires even one more person to step forward, one organisation to rethink its approach, or one partnership to form, then it will have achieved something lasting.
+These are not extraordinary people doing extraordinary things.
+They are ordinary people, doing vital things — every single day.
+And they deserve to be seen.
+They deserve to be supported.
+And yes — they deserve to be shouted about.
+Thank you.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://highsheriffofbuckinghamshire.org/index.html" class="hover:text-secondary transition-colors">Home</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/team.html" class="hover:text-secondary transition-colors">Team</a></li>
+<li><a href="https://highsheriffofbuckinghamshire.org/news.html" class="hover:text-secondary transition-colors">News</a></li>
+<li><a href="#contact" class="hover:text-secondary transition-colors"></a></li>
+</ul>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+<div class="flex space-x-4 mb-8">
+<a href="https://www.instagram.com/hisheriffbucks/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.linkedin.com/in/pippa-kirkbride-22787a284/" data-readdy="true" class="social-icon w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 text-center text-sm">
+<p>&copy; 2025 Office of the High Sheriff of Buckinghamshire. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Change icon based on menu state
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+const icon = mobileMenuButton.querySelector('i');
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+});
+});
+});
+</script>
+<script id="scroll-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerOffset = 140; // Height of fixed header + nav
+const elementPosition = targetElement.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
